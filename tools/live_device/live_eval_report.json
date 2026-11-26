@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-09-22 13:09:39",
+  "device_id": "RZCY51MQP9K",
+  "total_tasks": 1,
+  "rank1_only": {
+    "tasks_passed": 1,
+    "task_success_rate": 100.0,
+    "total_turns": 2,
+    "avg_turns_per_task": 2.0,
+    "repeated_action_loops": 0,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "task_details": [
+      {
+        "goal": "Open Clock and switch to Stopwatch",
+        "mode": "RANK1_ONLY",
+        "enable_recovery": false,
+        "success": true,
+        "status": "SUCCESS",
+        "turns_executed": 2,
+        "total_time_sec": 8.22,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 0,
+        "repeated_loops": 0,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 1.0,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 2,
+            "action": "Tap (Tap [#18] 'Timer')",
+            "confidence": 0.1758,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          }
+        ],
+        "actions": [
+          "OpenApp (OpenApp('clock'))",
+          "Tap (Tap [#18] 'Timer')"
+        ],
+        "outcomes": [
+          "SUCCESS",
+          "SUCCESS"
+        ]
+      }
+    ]
+  },
+  "active_recovery": {
+    "tasks_passed": 1,
+    "task_success_rate": 100.0,
+    "total_turns": 2,
+    "avg_turns_per_task": 2.0,
+    "repeated_action_loops": 0,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "recovery_events_triggered": 0,
+    "task_details": [
+      {
+        "goal": "Open Clock and switch to Stopwatch",
+        "mode": "ACTIVE_RECOVERY",
+        "enable_recovery": true,
+        "success": true,
+        "status": "SUCCESS",
+        "turns_executed": 2,
+        "total_time_sec": 4.81,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 0,
+        "repeated_loops": 0,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 1.0,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 2,
+            "action": "Tap (Tap [#36] 'Stopwatch')",
+            "confidence": 0.416,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          }
+        ],
+        "actions": [
+          "OpenApp (OpenApp('clock'))",
+          "Tap (Tap [#36] 'Stopwatch')"
+        ],
+        "outcomes": [
+          "SUCCESS",
+          "SUCCESS"
+        ]
+      }
+    ]
+  }
+}

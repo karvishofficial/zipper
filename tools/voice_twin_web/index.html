@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Zipper AI Voice Twin — Live Voice Call</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Official Tencent Cloud TRTC WebRTC JS SDK v5 -->
+  <script src="https://web.sdk.qcloud.com/trtc/webrtc/v5/dist/trtc.js"></script>
+</head>
+<body>
+  <div class="glass-container">
+    <header class="app-header">
+      <div class="badge-brand">
+        <span class="live-dot"></span>
+        <span class="brand-text">ZIPPER VOICE TWIN</span>
+      </div>
+      <div id="callTimer" class="call-timer">00:00</div>
+    </header>
+
+    <main class="call-body">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring pulse-ring-1"></div>
+        <div class="avatar-ring pulse-ring-2"></div>
+        <div class="avatar-circle">
+          <span class="avatar-emoji">🎙️</span>
+        </div>
+      </div>
+
+      <div class="call-info">
+        <h1 id="callerTitle">Karthik's AI Voice Twin</h1>
+        <p id="callSubtitle" class="subtitle">Bangalore AI Copilot & Voice Persona</p>
+        <div id="statusBadge" class="status-badge status-idle">Ready to Connect</div>
+      </div>
+
+      <div class="visualizer-container">
+        <div class="waveform-bar bar-1"></div>
+        <div class="waveform-bar bar-2"></div>
+        <div class="waveform-bar bar-3"></div>
+        <div class="waveform-bar bar-4"></div>
+        <div class="waveform-bar bar-5"></div>
+        <div class="waveform-bar bar-6"></div>
+        <div class="waveform-bar bar-7"></div>
+      </div>
+
+      <div id="speechTranscript" class="speech-transcript">
+        "Karthik is caught up with work. Speak to his AI Voice Twin!"
+      </div>
+    </main>
+
+    <footer class="controls-footer">
+      <div id="preCallActions" class="actions-group">
+        <button id="btnJoinCall" class="btn-primary-action">
+          <span class="btn-icon">📞</span>
+          <span class="btn-label">Connect & Start Talking</span>
+        </button>
+      </div>
+
+      <div id="inCallActions" class="actions-group in-call-hidden">
+        <button id="btnToggleMute" class="btn-secondary-action">
+          <span id="muteIcon" class="btn-icon">🎤</span>
+          <span id="muteLabel" class="btn-label">Mute</span>
+        </button>
+        <button id="btnEndCall" class="btn-danger-action">
+          <span class="btn-icon">📵</span>
+          <span class="btn-label">End Call</span>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "deployed_asset": {
+    "file": "karvish_v54.onnx",
+    "size_mb": 66.34,
+    "cold_init_ms": 429.06,
+    "avg_ms": 30.22,
+    "p50_ms": 29.96,
+    "p90_ms": 31.96,
+    "p95_ms": 32.43,
+    "min_ms": 27.34,
+    "max_ms": 34.58,
+    "throughput_decisions_per_sec": 33.1
+  }
+}

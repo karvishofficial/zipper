@@ -1,0 +1,44 @@
+# Android / Gradle / IDE
+*.iml
+.gradle/
+local.properties
+secrets.properties
+.env
+.env.*
+/.idea/
+/build/
+app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# Python / ML Environments & Caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Training Checkpoints, Datasets & Scratch
+tools/archived_assets/
+checkpoints_backup/
+scratch/
+**/checkpoints/
+**/data/*.jsonl
+**/data/*.pt
+*.jsonl
+*.pkl
+*.log
+*.tmp
+.netlify/
+web/tracking-dashboard/config.js
+
+# Root scratch dumps
+window_dump.xml
+live_screen*.xml
+*.png
+*.jpg
+!app/src/main/res/**/*.png
+!app/src/main/res/**/*.jpg

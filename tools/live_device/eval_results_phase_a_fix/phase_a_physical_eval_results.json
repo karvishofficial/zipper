@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-09-28 14:44:38",
+  "device_serial": "ZA222K5YNZ",
+  "device_model": "moto g34 5G",
+  "model_version": "KarvishModelV51_7 (Phase A De-Spoonfed)",
+  "checkpoint": "v51_phase_a_best.pt",
+  "sealed_tasks": [
+    {
+      "task_id": "sealed_1_calculator",
+      "name": "Calculator: 85 * 6 -> clear",
+      "category": "SEALED",
+      "goal": "Open Calculator, calculate 85 * 6, then clear",
+      "package": "com.google.android.calculator",
+      "duration_sec": 36.54,
+      "completed_signal": false,
+      "stopped_signal": false,
+      "observable_success": false,
+      "observable_state_summary": "Calculator foreground: True, Formula aligned: False, 510 Computed: False, Clear Executed: False, Actions: 15",
+      "loop_detected": false,
+      "turn_count": 15,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('Calculator'))",
+          "target": "None",
+          "confidence": 0.9799,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 2,
+          "action": "Tap (Tap [#16] '8')",
+          "target": "None",
+          "confidence": 0.5988,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#20] '5')",
+          "target": "None",
+          "confidence": 0.9031,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 4,
+          "action": "Tap (Tap [#18] 'multiply')",
+          "target": "None",
+          "confidence": 0.3138,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "Tap (Tap [#24] '2')",
+          "target": "None",
+          "confidence": 0.5317,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 6,
+          "action": "Tap (Tap [#21] '6')",
+          "target": "None",
+          "confidence": 0.4461,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 7,
+          "action": "Tap (Tap [#4] '7.333333333333333333')",
+          "target": "None",
+          "confidence": 0.3704,
+          "latency_ms": 0,
+          "verification": "NO_OP"
+        },
+        {
+          "turn": 8,
+          "action": "Tap (Tap [#24] '2')",
+          "target": "None",
+          "confidence": 0.5675,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "Tap (Tap [#23] '1')",
+          "target": "None",
+          "confidence": 0.7937,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 10,
+          "action": "Tap (Tap [#0] 'Today 660\u00f790 7.333333333333333333')",
+          "target": "None",
+          "confidence": 0.448,
+          "latency_ms": 0,
+          "verification": "NO_OP"
+        },
+        {
+          "turn": 11,
+          "action": "Tap (Tap [#24] '2')",
+          "target": "None",
+          "confidence": 0.5912,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 12,
+          "action": "Tap (Tap [#23] '1')",
+          "target": "None",
+          "confidence": 0.8807,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 13,
+          "action": "Scroll (Scroll DOWN)",
+          "target": "None",
+          "confidence": 0.1434,
+          "latency_ms": 0,
+          "verification": "NO_OP"
+        },
+        {
+          "turn": 14,
+          "action": "Tap (Tap [#24] '2')",
+          "target": "None",
+          "confidence": 0.597,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 15,
+          "action": "Tap (Tap [#23] '1')",
+          "target": "None",
+          "confidence": 0.8629,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_fix\\sealed_1_calculator_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_fix\\sealed_1_calculator_ui_dump.xml"
+    }
+  ],
+  "regression_tasks": [],
+  "summary": {
+    "sealed_passed": 0,
+    "sealed_total": 1,
+    "sealed_pass_rate": 0.0,
+    "regression_passed": 0,
+    "regression_total": 0,
+    "regression_pass_rate": 0.0
+  }
+}

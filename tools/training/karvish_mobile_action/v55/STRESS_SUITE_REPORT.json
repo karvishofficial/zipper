@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-03 12:44:32",
+  "model": "Karvish Universal V55",
+  "checkpoint": "c:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\training\\karvish_mobile_action\\v55\\checkpoints\\v55_best.pt",
+  "total_stress_tests": 22,
+  "passed_stress_tests": 22,
+  "stress_accuracy_pct": 100.0,
+  "permutation_invariance_passes": "10/10",
+  "spatial_jitter_invariance_passes": "10/10",
+  "stall_recovery_probability": 0.9952,
+  "unevidenced_completion_probability": 0.15,
+  "status": "QUALIFIED"
+}

@@ -1,0 +1,99 @@
+{
+  "evaluation_gate": "Epoch 1 Completion Gate",
+  "validation_samples": 77,
+  "metrics_comparison": {
+    "action_type_accuracy": {
+      "base": 0.0,
+      "epoch1": 46.75
+    },
+    "exact_action_accuracy": {
+      "base": 0.0,
+      "epoch1": 22.08
+    },
+    "ui_grounding_accuracy": {
+      "base": 0.0,
+      "epoch1": 13.33
+    },
+    "valid_function_call_rate": {
+      "base": 55.84,
+      "epoch1": 67.53
+    },
+    "unseen_app_accuracy": {
+      "base": 0.0,
+      "epoch1": 22.08
+    },
+    "multi_step_accuracy": {
+      "base": 0.0,
+      "epoch1": 21.88
+    },
+    "avg_inference_latency_sec": {
+      "base": 22.036,
+      "epoch1": 20.107
+    }
+  },
+  "per_category_epoch1": {
+    "open_app": {
+      "correct": 3,
+      "total": 7
+    },
+    "tap": {
+      "correct": 5,
+      "total": 45
+    },
+    "type_text": {
+      "correct": 0,
+      "total": 7
+    },
+    "scroll": {
+      "correct": 4,
+      "total": 7
+    },
+    "back": {
+      "correct": 4,
+      "total": 6
+    },
+    "complete": {
+      "correct": 0,
+      "total": 0
+    },
+    "wait": {
+      "correct": 1,
+      "total": 5
+    }
+  },
+  "per_category_base": {
+    "open_app": {
+      "correct": 0,
+      "total": 7
+    },
+    "tap": {
+      "correct": 0,
+      "total": 45
+    },
+    "type_text": {
+      "correct": 0,
+      "total": 7
+    },
+    "scroll": {
+      "correct": 0,
+      "total": 7
+    },
+    "back": {
+      "correct": 0,
+      "total": 6
+    },
+    "complete": {
+      "correct": 0,
+      "total": 0
+    },
+    "wait": {
+      "correct": 0,
+      "total": 5
+    }
+  },
+  "checkpoint_paths": {
+    "epoch1_pt": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\training\\experiment_c_needle2\\checkpoints_v3\\needle_lora_epoch1.pt",
+    "epoch1_pkl": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\training\\experiment_c_needle2\\checkpoints_v3\\needle_lora_epoch1.pkl",
+    "epoch1_safetensors": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\training\\experiment_c_needle2\\checkpoints_v3\\needle_lora_epoch1.safetensors"
+  }
+}

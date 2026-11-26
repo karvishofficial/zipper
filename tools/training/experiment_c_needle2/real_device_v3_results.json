@@ -1,0 +1,295 @@
+[
+  {
+    "goal": "Open Calculator",
+    "success": true,
+    "turns_executed": 1,
+    "actions_chosen": [
+      "OpenApp (OpenApp('Calculator'))"
+    ],
+    "avg_confidence": 0.894,
+    "grounding": "All Grounded",
+    "avg_latency_ms": 45.0,
+    "peak_ram_mb": 20.3,
+    "turns_detail": [
+      {
+        "turn": 1,
+        "goal": "Open Calculator",
+        "app": "com.zipper.app",
+        "nodes": 32,
+        "prompt": "Open Calculator",
+        "action": "OpenApp (OpenApp('Calculator'))",
+        "confidence": 0.894,
+        "executed": true,
+        "post_state": "com.sec.android.app.popupcalculator (25 nodes)",
+        "verification": "GOAL_COMPLETED -> Switched to app 'com.sec.android.app.popupcalculator'. 25 new element(s) appeared. 32 element(s) closed/disappeared."
+      }
+    ],
+    "task_label": "Task 1: Open Calculator"
+  },
+  {
+    "goal": "Open Clock",
+    "success": true,
+    "turns_executed": 1,
+    "actions_chosen": [
+      "OpenApp (OpenApp('Clock'))"
+    ],
+    "avg_confidence": 0.625,
+    "grounding": "All Grounded",
+    "avg_latency_ms": 45.0,
+    "peak_ram_mb": 20.3,
+    "turns_detail": [
+      {
+        "turn": 1,
+        "goal": "Open Clock",
+        "app": "com.zipper.app",
+        "nodes": 32,
+        "prompt": "Open Clock",
+        "action": "OpenApp (OpenApp('Clock'))",
+        "confidence": 0.6254,
+        "executed": true,
+        "post_state": "com.sec.android.app.clockpackage (19 nodes)",
+        "verification": "GOAL_COMPLETED -> Switched to app 'com.sec.android.app.clockpackage'. 18 new element(s) appeared. 31 element(s) closed/disappeared."
+      }
+    ],
+    "task_label": "Task 2: Open Clock"
+  },
+  {
+    "goal": "Open Clock and tap Stopwatch",
+    "success": false,
+    "turns_executed": 4,
+    "actions_chosen": [
+      "OpenApp (OpenApp('Clock'))",
+      "Tap (Tap [#2] 'Clock settings')",
+      "Tap (Tap [#2] 'Navigate up')",
+      "Tap (Tap [#2] 'Clock settings')"
+    ],
+    "avg_confidence": 0.172,
+    "grounding": "All Grounded",
+    "avg_latency_ms": 45.0,
+    "peak_ram_mb": 20.3,
+    "turns_detail": [
+      {
+        "turn": 1,
+        "goal": "Open Clock and tap Stopwatch",
+        "app": "com.sec.android.app.launcher",
+        "nodes": 0,
+        "prompt": "Open Clock and tap Stopwatch",
+        "action": "OpenApp (OpenApp('Clock'))",
+        "confidence": 0.0011,
+        "executed": true,
+        "post_state": "com.sec.android.app.clockpackage (19 nodes)",
+        "verification": "SUCCESS -> Switched to app 'com.sec.android.app.clockpackage'. 19 new element(s) appeared."
+      },
+      {
+        "turn": 2,
+        "goal": "Open Clock and tap Stopwatch",
+        "app": "com.sec.android.app.clockpackage",
+        "nodes": 19,
+        "prompt": "Open Clock and tap Stopwatch (already in clockpackage; previous: OpenApp(",
+        "action": "Tap (Tap [#2] 'Clock settings')",
+        "confidence": 0.3833,
+        "executed": true,
+        "post_state": "com.sec.android.app.clockpackage (46 nodes)",
+        "verification": "SUCCESS -> 38 new element(s) appeared. 18 element(s) closed/disappeared."
+      },
+      {
+        "turn": 3,
+        "goal": "Open Clock and tap Stopwatch",
+        "app": "com.sec.android.app.clockpackage",
+        "nodes": 46,
+        "prompt": "Open Clock and tap Stopwatch (already in clockpackage; previous: OpenApp(",
+        "action": "Tap (Tap [#2] 'Navigate up')",
+        "confidence": 0.1412,
+        "executed": true,
+        "post_state": "com.sec.android.app.clockpackage (19 nodes)",
+        "verification": "SUCCESS -> 18 new element(s) appeared. 38 element(s) closed/disappeared."
+      },
+      {
+        "turn": 6,
+        "goal": "Open Clock and tap Stopwatch",
+        "app": "com.sec.android.app.clockpackage",
+        "nodes": 19,
+        "prompt": "Open Clock and tap Stopwatch (already in clockpackage; previous: OpenApp(",
+        "action": "Tap (Tap [#2] 'Clock settings')",
+        "confidence": 0.1613,
+        "executed": true,
+        "post_state": "com.sec.android.app.clockpackage (37 nodes)",
+        "verification": "SUCCESS -> 29 new element(s) appeared. 18 element(s) closed/disappeared."
+      }
+    ],
+    "task_label": "Task 3: Open Clock -> Stopwatch"
+  },
+  {
+    "goal": "Open Settings and scroll down",
+    "success": true,
+    "turns_executed": 2,
+    "actions_chosen": [
+      "OpenApp (OpenApp('Settings'))",
+      "Scroll (Scroll DOWN)"
+    ],
+    "avg_confidence": 0.609,
+    "grounding": "All Grounded",
+    "avg_latency_ms": 45.0,
+    "peak_ram_mb": 20.3,
+    "turns_detail": [
+      {
+        "turn": 1,
+        "goal": "Open Settings and scroll down",
+        "app": "com.zipper.app",
+        "nodes": 21,
+        "prompt": "Open Settings and scroll down",
+        "action": "OpenApp (OpenApp('Settings'))",
+        "confidence": 0.9856,
+        "executed": true,
+        "post_state": "com.android.settings.intelligence (15 nodes)",
+        "verification": "SUCCESS -> Switched to app 'com.android.settings.intelligence'. 14 new element(s) appeared. 20 element(s) closed/disappeared."
+      },
+      {
+        "turn": 2,
+        "goal": "Open Settings and scroll down",
+        "app": "com.android.settings.intelligence",
+        "nodes": 15,
+        "prompt": "Open Settings and scroll down (already in intelligence; previous: OpenApp(",
+        "action": "Scroll (Scroll DOWN)",
+        "confidence": 0.2332,
+        "executed": true,
+        "post_state": "com.android.settings.intelligence (15 nodes)",
+        "verification": "GOAL_COMPLETED -> NO-OP: Screen state did not change after action. The element may be non-interactive or blocked."
+      }
+    ],
+    "task_label": "Task 4: Scroll through Settings"
+  },
+  {
+    "goal": "Open Settings and tap Display",
+    "success": false,
+    "turns_executed": 2,
+    "actions_chosen": [
+      "OpenApp (OpenApp('Settings'))",
+      "Tap (Tap [#14] 'Clear search field')"
+    ],
+    "avg_confidence": 0.677,
+    "grounding": "All Grounded",
+    "avg_latency_ms": 45.0,
+    "peak_ram_mb": 20.3,
+    "turns_detail": [
+      {
+        "turn": 1,
+        "goal": "Open Settings and tap Display",
+        "app": "com.zipper.app",
+        "nodes": 21,
+        "prompt": "Open Settings and tap Display",
+        "action": "OpenApp (OpenApp('Settings'))",
+        "confidence": 0.9732,
+        "executed": true,
+        "post_state": "com.android.settings.intelligence (15 nodes)",
+        "verification": "SUCCESS -> Switched to app 'com.android.settings.intelligence'. 14 new element(s) appeared. 20 element(s) closed/disappeared."
+      },
+      {
+        "turn": 2,
+        "goal": "Open Settings and tap Display",
+        "app": "com.android.settings.intelligence",
+        "nodes": 15,
+        "prompt": "Open Settings and tap Display (already in intelligence; previous: OpenApp(",
+        "action": "Tap (Tap [#14] 'Clear search field')",
+        "confidence": 0.3811,
+        "executed": true,
+        "post_state": "com.android.settings.intelligence (48 nodes)",
+        "verification": "SUCCESS -> 24 new element(s) appeared. 5 element(s) closed/disappeared."
+      }
+    ],
+    "task_label": "Task 5: Open app -> navigate somewhere"
+  },
+  {
+    "goal": "Open Calculator and tap 5",
+    "success": false,
+    "turns_executed": 2,
+    "actions_chosen": [
+      "OpenApp (OpenApp('Calculator'))",
+      "Tap (Tap [#12] '\u00c3\u2014')"
+    ],
+    "avg_confidence": 0.605,
+    "grounding": "All Grounded",
+    "avg_latency_ms": 45.0,
+    "peak_ram_mb": 20.3,
+    "turns_detail": [
+      {
+        "turn": 1,
+        "goal": "Open Calculator and tap 5",
+        "app": "com.zipper.app",
+        "nodes": 24,
+        "prompt": "Open Calculator and tap 5",
+        "action": "OpenApp (OpenApp('Calculator'))",
+        "confidence": 0.8678,
+        "executed": true,
+        "post_state": "com.sec.android.app.popupcalculator (25 nodes)",
+        "verification": "SUCCESS -> Switched to app 'com.sec.android.app.popupcalculator'. 25 new element(s) appeared. 24 element(s) closed/disappeared."
+      },
+      {
+        "turn": 2,
+        "goal": "Open Calculator and tap 5",
+        "app": "com.sec.android.app.popupcalculator",
+        "nodes": 25,
+        "prompt": "Open Calculator and tap 5 (already in popupcalculator; previous: OpenApp(",
+        "action": "Tap (Tap [#12] '\u00c3\u2014')",
+        "confidence": 0.3428,
+        "executed": true,
+        "post_state": "com.sec.android.app.popupcalculator (25 nodes)",
+        "verification": "NO_OP -> NO-OP: Screen state did not change after action. The element may be non-interactive or blocked."
+      }
+    ],
+    "task_label": "Task 6: Type text"
+  },
+  {
+    "goal": "Open Calendar and tap today",
+    "success": false,
+    "turns_executed": 3,
+    "actions_chosen": [
+      "OpenApp (OpenApp('Calendar'))",
+      "Tap (Tap [#3] '17')",
+      "Tap (Tap [#50] 'Add detailed event')"
+    ],
+    "avg_confidence": 0.391,
+    "grounding": "All Grounded",
+    "avg_latency_ms": 45.0,
+    "peak_ram_mb": 20.3,
+    "turns_detail": [
+      {
+        "turn": 1,
+        "goal": "Open Calendar and tap today",
+        "app": "com.sec.android.app.launcher",
+        "nodes": 1,
+        "prompt": "Open Calendar and tap today",
+        "action": "OpenApp (OpenApp('Calendar'))",
+        "confidence": 0.9036,
+        "executed": true,
+        "post_state": "com.samsung.android.calendar (51 nodes)",
+        "verification": "SUCCESS -> Switched to app 'com.samsung.android.calendar'. 51 new element(s) appeared. 1 element(s) closed/disappeared."
+      },
+      {
+        "turn": 2,
+        "goal": "Open Calendar and tap today",
+        "app": "com.samsung.android.calendar",
+        "nodes": 51,
+        "prompt": "Open Calendar and tap today (already in calendar; previous: OpenApp(",
+        "action": "Tap (Tap [#3] '17')",
+        "confidence": 0.1783,
+        "executed": true,
+        "post_state": "com.samsung.android.calendar (51 nodes)",
+        "verification": "NO_OP -> NO-OP: Screen state did not change after action. The element may be non-interactive or blocked."
+      },
+      {
+        "turn": 3,
+        "goal": "Open Calendar and tap today",
+        "app": "com.samsung.android.calendar",
+        "nodes": 51,
+        "prompt": "Open Calendar and tap today (already in calendar; previous: OpenApp(",
+        "action": "Tap (Tap [#50] 'Add detailed event')",
+        "confidence": 0.0914,
+        "executed": true,
+        "post_state": "com.samsung.android.calendar (41 nodes)",
+        "verification": "SUCCESS -> 41 new element(s) appeared. 51 element(s) closed/disappeared."
+      }
+    ],
+    "task_label": "Task 7: Multi-step task on unseen app"
+  }
+]

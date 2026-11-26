@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090D16"
+    android:fitsSystemWindows="true">
+
+    <!-- MAIN CHAT & ASSISTANT VIEW -->
+    <LinearLayout
+        android:id="@+id/llMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Navigation & Header Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0D1527"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp">
+
+            <!-- Row 1: Back + Title + Live Status Badge -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Back"
+                    android:src="@android:drawable/ic_menu_revert"
+                    app:tint="#CBD5E1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="🌐 KARVISH WEB ASSISTANT"
+                        android:textColor="#F8FAFC"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Silent Web Exploration &amp; Autonomous Actions"
+                        android:textColor="#64748B"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <!-- Status Badge -->
+                <TextView
+                    android:id="@+id/tvWebStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_terminal"
+                    android:paddingStart="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="🟢 READY"
+                    android:textColor="#34D399"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Row 2: Action Toolbar (AI Mode Toggle + Peek + AI Config) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <!-- AI Mode Toggle Button (LLM ON / OFF Fast Mode) -->
+                <Button
+                    android:id="@+id/btnToggleAiMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#059669"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="⚡ AI: ON"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <!-- Peek Button -->
+                <Button
+                    android:id="@+id/btnTogglePeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:backgroundTint="#1E293B"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="👁️ Peek"
+                    android:textColor="#94A3B8"
+                    android:textSize="11sp" />
+
+                <!-- AI API Settings Button -->
+                <Button
+                    android:id="@+id/btnApiSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#1E293B"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="⚙️ Config"
+                    android:textColor="#38BDF8"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Peek WebView Container (Collapsible Half Preview with Fullscreen Expand) -->
+        <FrameLayout
+            android:id="@+id/flPeekContainer"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#0F172A"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/flWebViewPlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Banner with Live Status & Expand Fullscreen Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="top"
+                android:background="#B30B132B"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:id="@+id/tvPeekPreviewUrl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:text="🌐 LIVE PREVIEW"
+                    android:textColor="#38BDF8"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btnPeekSavePdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="6dp"
+                    android:backgroundTint="#059669"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="📥 PDF"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btnExpandFullscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:backgroundTint="#2563EB"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="⤢ Fullscreen"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/btnClosePeek"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="4dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close Preview"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    app:tint="#94A3B8" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Chat Messages List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChatMessages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="16dp" />
+
+        <!-- Suggestion Chips Horizontal Bar -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chipReplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_chip_suggestion"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:text="▶ Replay: RRCE Login"
+                    android:textColor="#34D399"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/chipTomato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_chip_suggestion"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:text="🍅 Tomato price"
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chipIPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_chip_suggestion"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:text="📱 iPhone 15 price"
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chipFlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_chip_suggestion"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:text="✈️ Flights BLR to DEL"
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chipGold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_chip_suggestion"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:text="🪙 Gold rate today"
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chipCompare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_chip_suggestion"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:text="⚖️ Compare iPhone 15"
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chipPNR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_chip_suggestion"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp"
+                    android:text="🚆 PNR status"
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Bottom Input Controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0D1527"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <EditText
+                android:id="@+id/etWebPrompt"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_box"
+                android:hint="Ask Karvish to search, compare, or lookup..."
+                android:imeOptions="actionSend"
+                android:inputType="textCapSentences"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#F8FAFC"
+                android:textColorHint="#475569"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/btnWebVoice"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_chip_suggestion"
+                android:contentDescription="Voice Input"
+                android:src="@drawable/ic_mic"
+                app:tint="#94A3B8" />
+
+            <ImageButton
+                android:id="@+id/btnWebSend"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_chat_user"
+                android:contentDescription="Send"
+                android:src="@drawable/ic_send"
+                app:tint="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FULLSCREEN LIVE INTERACTIVE WEB VIEWER OVERLAY -->
+    <LinearLayout
+        android:id="@+id/llFullscreenWebOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#090D16"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Top Browser Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#0D1527"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <ImageButton
+                android:id="@+id/btnBrowserClose"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Close Browser"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="#CBD5E1" />
+
+            <!-- URL / Domain Badge -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_terminal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔒 "
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvBrowserUrl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:text="https://..."
+                    android:textColor="#38BDF8"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnBrowserRefresh"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Refresh"
+                android:src="@android:drawable/ic_popup_sync"
+                app:tint="#94A3B8" />
+
+            <ImageButton
+                android:id="@+id/btnBrowserExternal"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Open External"
+                android:src="@android:drawable/ic_menu_send"
+                app:tint="#94A3B8" />
+
+            <Button
+                android:id="@+id/btnBrowserSavePdf"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="#059669"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="📥 PDF"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Live WebView Container -->
+        <FrameLayout
+            android:id="@+id/flFullscreenPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#000000" />
+
+        <!-- Bottom Browser Navigation Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#0D1527"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBrowserNavBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Web Back"
+                android:src="@android:drawable/ic_media_previous"
+                app:tint="#CBD5E1" />
+
+            <ImageButton
+                android:id="@+id/btnBrowserNavForward"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Web Forward"
+                android:src="@android:drawable/ic_media_next"
+                app:tint="#CBD5E1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnBackToChat"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:backgroundTint="#1E293B"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="💬 Back to Chat"
+                android:textColor="#38BDF8"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

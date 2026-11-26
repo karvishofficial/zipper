@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-09-18 15:35:59",
+  "device_id": "RZCY51MQP9K",
+  "total_tasks": 1,
+  "rank1_only": {
+    "tasks_passed": 0,
+    "task_success_rate": 0.0,
+    "total_turns": 2,
+    "avg_turns_per_task": 2.0,
+    "repeated_action_loops": 1,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "task_details": [
+      {
+        "goal": "Open Settings and scroll down",
+        "mode": "RANK1_ONLY",
+        "enable_recovery": false,
+        "success": false,
+        "status": "FAILED",
+        "turns_executed": 2,
+        "total_time_sec": 5.71,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 0,
+        "repeated_loops": 1,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.4362,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 2,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.4283,
+            "latency_ms": 15,
+            "outcome": "NO_OP"
+          }
+        ],
+        "actions": [
+          "Scroll (Scroll DOWN)",
+          "Scroll (Scroll DOWN)"
+        ],
+        "outcomes": [
+          "SUCCESS",
+          "NO_OP"
+        ]
+      }
+    ]
+  },
+  "active_recovery": {
+    "tasks_passed": 0,
+    "task_success_rate": 0.0,
+    "total_turns": 7,
+    "avg_turns_per_task": 7.0,
+    "repeated_action_loops": 3,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "recovery_events_triggered": 7,
+    "task_details": [
+      {
+        "goal": "Open Settings and scroll down",
+        "mode": "ACTIVE_RECOVERY",
+        "enable_recovery": true,
+        "success": false,
+        "status": "FAILED",
+        "turns_executed": 7,
+        "total_time_sec": 13.95,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 7,
+        "repeated_loops": 3,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.4362,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 2,
+            "action": "OpenApp (OpenApp('settings'))",
+            "confidence": 0.2272,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 3,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.2448,
+            "latency_ms": 15,
+            "outcome": "NO_OP"
+          },
+          {
+            "turn": 4,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.1943,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 5,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.2423,
+            "latency_ms": 15,
+            "outcome": "NO_OP"
+          },
+          {
+            "turn": 6,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.1914,
+            "latency_ms": 15,
+            "outcome": "NO_OP"
+          },
+          {
+            "turn": 7,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.3421,
+            "latency_ms": 15,
+            "outcome": "NO_OP"
+          }
+        ],
+        "actions": [
+          "Scroll (Scroll DOWN)",
+          "OpenApp (OpenApp('settings'))",
+          "Scroll (Scroll DOWN)",
+          "Scroll (Scroll DOWN)",
+          "Scroll (Scroll DOWN)",
+          "Scroll (Scroll DOWN)",
+          "Scroll (Scroll DOWN)"
+        ],
+        "outcomes": [
+          "SUCCESS",
+          "SUCCESS",
+          "NO_OP",
+          "SUCCESS",
+          "NO_OP",
+          "NO_OP",
+          "NO_OP"
+        ]
+      }
+    ]
+  }
+}

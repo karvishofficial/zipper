@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-09-18 15:39:17",
+  "device_id": "RZCY51MQP9K",
+  "total_tasks": 1,
+  "rank1_only": {
+    "tasks_passed": 1,
+    "task_success_rate": 100.0,
+    "total_turns": 1,
+    "avg_turns_per_task": 1.0,
+    "repeated_action_loops": 0,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "task_details": [
+      {
+        "goal": "Open Settings and scroll down",
+        "mode": "RANK1_ONLY",
+        "enable_recovery": false,
+        "success": true,
+        "status": "SUCCESS",
+        "turns_executed": 1,
+        "total_time_sec": 5.57,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 0,
+        "repeated_loops": 0,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.4362,
+            "latency_ms": 15,
+            "outcome": "GOAL_COMPLETED"
+          }
+        ],
+        "actions": [
+          "Scroll (Scroll DOWN)"
+        ],
+        "outcomes": [
+          "GOAL_COMPLETED"
+        ]
+      }
+    ]
+  },
+  "active_recovery": {
+    "tasks_passed": 1,
+    "task_success_rate": 100.0,
+    "total_turns": 1,
+    "avg_turns_per_task": 1.0,
+    "repeated_action_loops": 0,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "recovery_events_triggered": 0,
+    "task_details": [
+      {
+        "goal": "Open Settings and scroll down",
+        "mode": "ACTIVE_RECOVERY",
+        "enable_recovery": true,
+        "success": true,
+        "status": "SUCCESS",
+        "turns_executed": 1,
+        "total_time_sec": 2.83,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 0,
+        "repeated_loops": 0,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "Scroll (Scroll DOWN)",
+            "confidence": 0.4362,
+            "latency_ms": 15,
+            "outcome": "GOAL_COMPLETED"
+          }
+        ],
+        "actions": [
+          "Scroll (Scroll DOWN)"
+        ],
+        "outcomes": [
+          "GOAL_COMPLETED"
+        ]
+      }
+    ]
+  }
+}

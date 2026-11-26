@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-10-03 09:16:26",
+  "checkpoint": "c:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\training\\karvish_mobile_action\\v54\\checkpoints\\v54_best.pt",
+  "total_probes_evaluated": 4,
+  "probes_passed": 3,
+  "probe_1_header_trap": "PASS",
+  "probe_2_premature_complete": "PASS",
+  "probe_3_query_span": "PASS",
+  "probe_4_noop_recovery": "FAIL",
+  "gate_8_launcher_action_match": "PASS",
+  "detailed_results": {
+    "probe_1_wa_header_trap": {
+      "passed": true,
+      "target_correct": true,
+      "action_correct": true,
+      "margin": 43.53,
+      "min_margin_required": 3.0,
+      "top_cand": "Message",
+      "top_score": 11.18,
+      "target_cand": "Message",
+      "target_score": 11.18,
+      "distractor_cand": "Bhavani",
+      "distractor_score": -32.36,
+      "pred_action": "TYPE_TEXT",
+      "expected_action": "TYPE_TEXT",
+      "latency_ms": 288.64
+    },
+    "probe_2_wa_premature_complete": {
+      "passed": true,
+      "target_correct": true,
+      "action_correct": true,
+      "margin": 44.2,
+      "min_margin_required": 3.0,
+      "top_cand": "Manoj 3",
+      "top_score": 26.14,
+      "target_cand": "Manoj 3",
+      "target_score": 26.14,
+      "distractor_cand": "complete",
+      "distractor_score": -18.07,
+      "pred_action": "CLICK",
+      "expected_action": "CLICK",
+      "latency_ms": 21.18
+    },
+    "probe_3_zepto_span_separation": {
+      "goal": "open zepto search cheapest tomato and add to cart",
+      "extracted_span": "tomato",
+      "latency_ms": 19.61,
+      "desired_target": "tomato",
+      "passed": true
+    },
+    "probe_4_noop_delta_recovery": {
+      "description": "Detection of empty transition (delta_tree == 0 and delta_view == 0)",
+      "v54_supported": false,
+      "v54_failure_reason": "Stateless policy repeated 'scroll down' 3 consecutive turns despite NO-OP verification",
+      "passed": false
+    },
+    "regression_gates_summary": {
+      "gate_8_passed": true,
+      "gate_8_action": "OPEN_APP",
+      "gate_8_expected": "OPEN_APP",
+      "gate_10_passed": true
+    }
+  }
+}

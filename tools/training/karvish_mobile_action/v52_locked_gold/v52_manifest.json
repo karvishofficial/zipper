@@ -1,0 +1,50 @@
+{
+  "baseline_name": "V52-LOCKED-GOLD",
+  "lock_date": "2026-09-30T16:00:00+05:30",
+  "parameters": 26778590,
+  "val_top1": 100.0,
+  "device_verified": "Samsung Galaxy A26 (RZCY51MQP9K)",
+  "description": "Immutable golden baseline checkpoint and ONNX export for Karvish V52. Unaffected control model.",
+  "files": {
+    "export_v52_onnx.py": {
+      "bytes": 7077,
+      "sha256": "e5afd014bc26d22198c4a6e8c5a3f913c4372312f319641a68574cd30a198b0b"
+    },
+    "goal_coverage_and_state_v52.py": {
+      "bytes": 5892,
+      "sha256": "93fef97b7a47e1ae7466a8c57333bd4b9df9c98e034854d20fbf8e5edaff3e85"
+    },
+    "hierarchical_container_attention_v52.py": {
+      "bytes": 4290,
+      "sha256": "10e78854842f6ec2adcc99e06e63c99cd07fb1693161a70620418368e419f246"
+    },
+    "karvish_v52_locked_gold.onnx": {
+      "bytes": 102791700,
+      "sha256": "247a4ee82e23f3859e8582eea2ba02d0935078ff057dd90545dab1fa91d6810e"
+    },
+    "language_backbone_v52.py": {
+      "bytes": 5554,
+      "sha256": "a33bf91c49c422c67e24a9b83f300894d2cbe6b39f92da4ce498f6424c68389c"
+    },
+    "learned_span_head_v52.py": {
+      "bytes": 4284,
+      "sha256": "053707b95b649630fc5720e6e261cb2a2dbafcd1421e5f8f15e23008eae74d4c"
+    },
+    "model_v52.py": {
+      "bytes": 9798,
+      "sha256": "57480cda661220298b19fb93779e57157172d26cec31844ba141ad2ea0fa43be"
+    },
+    "schema_v52.py": {
+      "bytes": 10283,
+      "sha256": "3db37f8633dd3a0bdada9d3cc735927394dfea6ca0fe48c89e66a6b87cc9fbfd"
+    },
+    "spatial_geometry_v52.py": {
+      "bytes": 3383,
+      "sha256": "2e275c6714c0226a68fce560bf12f779472ccaac83fbcf69640158af18128a1b"
+    },
+    "v52_locked_gold.pt": {
+      "bytes": 107196540,
+      "sha256": "fa38aa02c290f8839ee4c1b162136a32bd5618f5d3f7a11bb3b824f288c1d04c"
+    }
+  }
+}

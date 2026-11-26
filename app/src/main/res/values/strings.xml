@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">zipper</string>
+    <string name="accessibility_service_description">Karvish Local Agentic Action Runtime for observing UI, executing verified procedural skills, and repairing drift.</string>
+</resources>

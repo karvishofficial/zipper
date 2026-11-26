@@ -1,0 +1,336 @@
+{
+  "timestamp": "2026-09-18 15:04:07",
+  "device_id": "RZCY51MQP9K",
+  "total_tasks": 1,
+  "rank1_only": {
+    "tasks_passed": 0,
+    "task_success_rate": 0.0,
+    "total_turns": 13,
+    "avg_turns_per_task": 13.0,
+    "repeated_action_loops": 0,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "task_details": [
+      {
+        "goal": "Open Clock and switch tabs",
+        "mode": "RANK1_ONLY",
+        "enable_recovery": false,
+        "success": false,
+        "status": "TIMEOUT",
+        "turns_executed": 13,
+        "total_time_sec": 26.43,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 0,
+        "repeated_loops": 0,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.957,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 2,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1958,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 3,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9483,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 4,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1966,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 5,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9461,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 6,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1966,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 7,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 8,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 9,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 10,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 11,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 12,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 13,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          }
+        ],
+        "actions": [
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))"
+        ],
+        "outcomes": [
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS"
+        ]
+      }
+    ]
+  },
+  "active_recovery": {
+    "tasks_passed": 0,
+    "task_success_rate": 0.0,
+    "total_turns": 17,
+    "avg_turns_per_task": 17.0,
+    "repeated_action_loops": 0,
+    "false_completes": 0,
+    "avg_turn_latency_ms": 15.0,
+    "recovery_events_triggered": 0,
+    "task_details": [
+      {
+        "goal": "Open Clock and switch tabs",
+        "mode": "ACTIVE_RECOVERY",
+        "enable_recovery": true,
+        "success": false,
+        "status": "TIMEOUT",
+        "turns_executed": 17,
+        "total_time_sec": 26.46,
+        "avg_turn_latency_ms": 15.0,
+        "recovery_events": 0,
+        "repeated_loops": 0,
+        "false_completes": 0,
+        "turns": [
+          {
+            "turn": 1,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.957,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 2,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1958,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 3,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9483,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 4,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1966,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 5,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9461,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 6,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1966,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 7,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 8,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 9,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 10,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 11,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 12,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 13,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 14,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 15,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 16,
+            "action": "PressBack (Press Back)",
+            "confidence": 0.1972,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          },
+          {
+            "turn": 17,
+            "action": "OpenApp (OpenApp('clock'))",
+            "confidence": 0.9464,
+            "latency_ms": 15,
+            "outcome": "SUCCESS"
+          }
+        ],
+        "actions": [
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))",
+          "PressBack (Press Back)",
+          "OpenApp (OpenApp('clock'))"
+        ],
+        "outcomes": [
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS",
+          "SUCCESS"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📞"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule Call Reminder"
+                android:textColor="#F8FAFC"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Rings your phone out loud with Paradee-8M voice"
+                android:textColor="#94A3B8"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Task / Chore Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="REMINDER TITLE / CHORE"
+        android:textColor="#38BDF8"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etReminderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_input_box"
+        android:hint="e.g. Switch off water motor"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#F8FAFC"
+        android:textColorHint="#64748B"
+        android:textSize="14sp" />
+
+    <!-- Spoken Voice Prompt -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="WHAT SHOULD THE VOICE SAY?"
+        android:textColor="#38BDF8"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etSpokenPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_input_box"
+        android:hint="e.g. Water motor has been running for 25m, turn it off!"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#F8FAFC"
+        android:textColorHint="#64748B"
+        android:textSize="14sp" />
+
+    <!-- Quick Time Preset Chips -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="WHEN SHOULD IT RING?"
+        android:textColor="#38BDF8"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chip15m"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="+15 mins"
+                android:textColor="#38BDF8"
+                android:textSize="12sp"
+                app:strokeColor="#38BDF8" />
+
+            <Button
+                android:id="@+id/chip30m"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:text="+30 mins"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                app:strokeColor="#334155" />
+
+            <Button
+                android:id="@+id/chip1h"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:text="+1 hour"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                app:strokeColor="#334155" />
+
+            <Button
+                android:id="@+id/chipTonight"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:text="Tonight 8 PM"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                app:strokeColor="#334155" />
+
+            <Button
+                android:id="@+id/chipTomorrow"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:text="Tomorrow 9 AM"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                app:strokeColor="#334155" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Custom Exact Time Selector -->
+    <TextView
+        android:id="@+id/tvSelectedTimeSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Scheduled for: In 15 minutes"
+        android:textColor="#34D399"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <!-- Action Type Toggle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbAgentHandoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#2563EB"
+            android:text="Enable 'Do It / Pay Now' Button on Call"
+            android:textColor="#CBD5E1"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etTargetAgentGoal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_input_box"
+        android:hint="Goal: e.g. Open Google Pay and pay electricity bill"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#F8FAFC"
+        android:textColorHint="#64748B"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelReminder"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="#94A3B8" />
+
+        <Button
+            android:id="@+id/btnScheduleCallReminder"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="2"
+            android:backgroundTint="#2563EB"
+            android:text="Set Call Alert"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

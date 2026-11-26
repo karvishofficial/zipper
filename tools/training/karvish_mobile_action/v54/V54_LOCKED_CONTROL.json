@@ -1,0 +1,36 @@
+{
+  "baseline_name": "V54-LOCKED-CONTROL",
+  "locked_date": "2026-10-03T10:48:00+05:30",
+  "description": "Authoritative immutable frozen control baseline for Karvish V54 universal search, WhatsApp contact disambiguation, and device execution.",
+  "status": "FROZEN_IMMUTABLE",
+  "constitutional_authority": "AGENTS.md Non-Negotiable Laws 0-15",
+  "artifacts": {
+    "pytorch_checkpoint": {
+      "path": "tools/training/karvish_mobile_action/v54/checkpoints/v54_universal_search_best.pt",
+      "sha256": "a6decb1129df2bc9f622d4a13b56b6233d8ac3aad0d406b0295619c0484408c7"
+    },
+    "onnx_fp16_model": {
+      "path": "tools/training/karvish_mobile_action/v54/checkpoints/karvish_v54_fp16.onnx",
+      "assets_path": "app/src/main/assets/models/karvish_v54_fp16.onnx",
+      "size_bytes": 53114090,
+      "sha256": "7332f6be8d7b786e4988c39b06b472fde5c4d5628f96f56427ab56e75c2bf744"
+    },
+    "onnx_fp32_model": {
+      "path": "app/src/main/assets/models/karvish_v54.onnx",
+      "size_bytes": 105570193,
+      "sha256": "4d6328bc74eeba235261549a467e1430019fd7fe092c2e252b1714fb69d87912"
+    }
+  },
+  "proven_capabilities": [
+    "WhatsApp search to contact selection ('send hi to Shobha Aunty', 'Bhavani', 'Rekha')",
+    "YouTube home search affordance grounding",
+    "Zepto price grounding on cheapest tomato (₹13 vs ₹19)",
+    "12/12 Frozen Baseline Anchor Tasks"
+  ],
+  "known_limitations_for_v55_evolution": [
+    "WhatsApp header profile picture / status distractor tap rate",
+    "No multimodal NO-OP recovery head (stall loop on failed touch)",
+    "Recurrent state h_prev was inactive in initial deployment",
+    "Premature CompleteGoal on OpenApp success"
+  ]
+}

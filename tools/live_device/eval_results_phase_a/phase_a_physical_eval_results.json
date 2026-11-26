@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-09-28 16:46:35",
+  "device_serial": "RZCY51MQP9K",
+  "device_model": "SM-A266B",
+  "model_version": "KarvishModelV51_7 (Phase A De-Spoonfed)",
+  "checkpoint": "v51_phase_a_best.pt",
+  "sealed_tasks": [
+    {
+      "task_id": "sealed_1_calculator",
+      "name": "Calculator: 85 * 6 -> clear",
+      "category": "SEALED",
+      "goal": "Open Calculator, calculate 85 * 6, then clear",
+      "package": "com.sec.android.app.popupcalculator",
+      "duration_sec": 35.03,
+      "completed_signal": false,
+      "stopped_signal": false,
+      "observable_success": false,
+      "observable_state_summary": "FAILED: Agent remained on launcher screen (com.zipper.app); target app com.sec.android.app.popupcalculator was not in foreground.",
+      "loop_detected": false,
+      "turn_count": 15,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('Calculator'))",
+          "target": "None",
+          "confidence": 0.6948,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 2,
+          "action": "Tap (Tap [#10] '8')",
+          "target": "None",
+          "confidence": 0.2921,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#13] '5')",
+          "target": "None",
+          "confidence": 0.0816,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 4,
+          "action": "Submit (Submit focused field)",
+          "target": "None",
+          "confidence": 0.0715,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "PressBack (Press Back)",
+          "target": "None",
+          "confidence": 0.0734,
+          "latency_ms": 0,
+          "verification": "WRONG_SCREEN"
+        },
+        {
+          "turn": 6,
+          "action": "OpenApp (OpenApp('Calculator'))",
+          "target": "None",
+          "confidence": 0.8191,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 7,
+          "action": "Tap (Tap [#16] '2')",
+          "target": "None",
+          "confidence": 0.0711,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 8,
+          "action": "Tap (Tap [#16] '2')",
+          "target": "None",
+          "confidence": 0.0628,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "Tap (Tap [#9] 'C')",
+          "target": "None",
+          "confidence": 0.0676,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 10,
+          "action": "TypeText (Type '* 6, then' into [#3] 'Calculator input field')",
+          "target": "None",
+          "confidence": 0.0656,
+          "latency_ms": 0,
+          "verification": "NO_OP"
+        },
+        {
+          "turn": 11,
+          "action": "Tap (Tap [#10] '8')",
+          "target": "None",
+          "confidence": 0.2175,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 12,
+          "action": "Tap (Tap [#10] '8')",
+          "target": "None",
+          "confidence": 0.1952,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 13,
+          "action": "Tap (Tap [#13] '5')",
+          "target": "None",
+          "confidence": 0.1028,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 14,
+          "action": "Tap (Tap [#13] '5')",
+          "target": "None",
+          "confidence": 0.0969,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 15,
+          "action": "PressBack (Press Back)",
+          "target": "None",
+          "confidence": 0.0955,
+          "latency_ms": 0,
+          "verification": "WRONG_SCREEN"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a\\sealed_1_calculator_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a\\sealed_1_calculator_ui_dump.xml"
+    }
+  ],
+  "regression_tasks": [],
+  "summary": {
+    "sealed_passed": 0,
+    "sealed_total": 1,
+    "sealed_pass_rate": 0.0,
+    "regression_passed": 0,
+    "regression_total": 0,
+    "regression_pass_rate": 0.0
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "timestamp": "2026-10-03 12:44:13",
+  "model": "Karvish Universal V55",
+  "checkpoint": "c:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\training\\karvish_mobile_action\\v55\\checkpoints\\v55_best.pt",
+  "total_unseen_apps_evaluated": 30,
+  "total_passed": 26,
+  "unseen_app_success_rate_pct": 86.67,
+  "threshold_required_pct": 85.0,
+  "status": "QUALIFIED",
+  "domain_breakdown": {
+    "Communication": {
+      "passed": 6,
+      "total": 6,
+      "accuracy_pct": 100.0
+    },
+    "E-Commerce": {
+      "passed": 2,
+      "total": 6,
+      "accuracy_pct": 33.3
+    },
+    "Productivity": {
+      "passed": 6,
+      "total": 6,
+      "accuracy_pct": 100.0
+    },
+    "Media": {
+      "passed": 6,
+      "total": 6,
+      "accuracy_pct": 100.0
+    },
+    "Utilities": {
+      "passed": 6,
+      "total": 6,
+      "accuracy_pct": 100.0
+    }
+  },
+  "tasks_detail": [
+    {
+      "app": "SignalX",
+      "domain": "Communication",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Type a message",
+      "expected_candidate": "Type a message",
+      "margin": 91.17,
+      "latency_ms": 423.14,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "ChimeChat",
+      "domain": "Communication",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Write something...",
+      "expected_candidate": "Write something...",
+      "margin": 46.14,
+      "latency_ms": 23.13,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "EchoFeed",
+      "domain": "Communication",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Reply...",
+      "expected_candidate": "Reply...",
+      "margin": 55.79,
+      "latency_ms": 31.54,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "TeamPulse",
+      "domain": "Communication",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Message #general",
+      "expected_candidate": "Message #general",
+      "margin": 86.64,
+      "latency_ms": 18.54,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "VibeTalk",
+      "domain": "Communication",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Kevin Brown",
+      "expected_candidate": "Kevin Brown",
+      "margin": 9.91,
+      "latency_ms": 20.88,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "WhisperNet",
+      "domain": "Communication",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Elena Rostova",
+      "expected_candidate": "Elena Rostova",
+      "margin": 27.74,
+      "latency_ms": 29.1,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "SpeedMart",
+      "domain": "E-Commerce",
+      "passed": false,
+      "target_correct": false,
+      "picked_candidate": "Imported Royal Apples 1kg \u20b9260",
+      "expected_candidate": "Fresh Fuji Apples 1kg \u20b9120",
+      "margin": -1.07,
+      "latency_ms": 29.85,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "ShopZen",
+      "domain": "E-Commerce",
+      "passed": false,
+      "target_correct": false,
+      "picked_candidate": "Woolen Thermal Socks \u20b9199",
+      "expected_candidate": "Cotton Blue Socks Pair \u20b949",
+      "margin": -6.36,
+      "latency_ms": 23.42,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "FreshDrop",
+      "domain": "E-Commerce",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Search fresh dairy, fruits...",
+      "expected_candidate": "Search fresh dairy, fruits...",
+      "margin": 70.7,
+      "latency_ms": 21.38,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "SwiftCart",
+      "domain": "E-Commerce",
+      "passed": false,
+      "target_correct": false,
+      "picked_candidate": "Artisan Roast Beans 250g \u20b9450",
+      "expected_candidate": "Classic Instant Coffee 50g \u20b975",
+      "margin": -2.67,
+      "latency_ms": 30.78,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "DailyBasket",
+      "domain": "E-Commerce",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Search 10,000+ items",
+      "expected_candidate": "Search 10,000+ items",
+      "margin": 3.23,
+      "latency_ms": 20.28,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "PantryPlus",
+      "domain": "E-Commerce",
+      "passed": false,
+      "target_correct": false,
+      "picked_candidate": "Sponsored: Get 20% Discount",
+      "expected_candidate": "Farm Fresh Eggs 6pk \u20b942",
+      "margin": -1.7,
+      "latency_ms": 22.68,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "NoteCraft",
+      "domain": "Productivity",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "New Note (+)",
+      "expected_candidate": "New Note (+)",
+      "margin": 37.17,
+      "latency_ms": 26.22,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "TaskCraft",
+      "domain": "Productivity",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "What needs to be done?",
+      "expected_candidate": "What needs to be done?",
+      "margin": 75.31,
+      "latency_ms": 30.01,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "CloudDrive",
+      "domain": "Productivity",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Upload File",
+      "expected_candidate": "Upload File",
+      "margin": 20.14,
+      "latency_ms": 24.17,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "DocuFlow",
+      "domain": "Productivity",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Filter documents...",
+      "expected_candidate": "Filter documents...",
+      "margin": 42.13,
+      "latency_ms": 24.42,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "MindMap",
+      "domain": "Productivity",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Q4 Engineering Roadmap",
+      "expected_candidate": "Q4 Engineering Roadmap",
+      "margin": 6.26,
+      "latency_ms": 40.86,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "QuickMemo",
+      "domain": "Productivity",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Start typing your thoughts...",
+      "expected_candidate": "Start typing your thoughts...",
+      "margin": 60.18,
+      "latency_ms": 40.75,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "AudioFlow",
+      "domain": "Media",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Search songs, podcasts...",
+      "expected_candidate": "Search songs, podcasts...",
+      "margin": 87.41,
+      "latency_ms": 41.82,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "CineView",
+      "domain": "Media",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Interstellar (2014) 4K",
+      "expected_candidate": "Interstellar (2014) 4K",
+      "margin": 91.42,
+      "latency_ms": 41.19,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "PhotoLab",
+      "domain": "Media",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "IMG_20261002_Sunset.jpg",
+      "expected_candidate": "IMG_20261002_Sunset.jpg",
+      "margin": 58.38,
+      "latency_ms": 29.79,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "StreamVibe",
+      "domain": "Media",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Search artists, tracks...",
+      "expected_candidate": "Search artists, tracks...",
+      "margin": 87.33,
+      "latency_ms": 30.04,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "BookWorm",
+      "domain": "Media",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Chapter 4: The Neural Age",
+      "expected_candidate": "Chapter 4: The Neural Age",
+      "margin": 14.07,
+      "latency_ms": 26.73,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "GameVault",
+      "domain": "Media",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Chess Master 3D",
+      "expected_candidate": "Chess Master 3D",
+      "margin": 39.9,
+      "latency_ms": 35.74,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "HealthTrack",
+      "domain": "Utilities",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "+ Add Water (250ml)",
+      "expected_candidate": "+ Add Water (250ml)",
+      "margin": 33.57,
+      "latency_ms": 27.47,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "BudgetWise",
+      "domain": "Utilities",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Amount (\u20b9)",
+      "expected_candidate": "Amount (\u20b9)",
+      "margin": 92.43,
+      "latency_ms": 33.71,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "HomeSmart",
+      "domain": "Utilities",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Living Room Lamp (OFF)",
+      "expected_candidate": "Living Room Lamp (OFF)",
+      "margin": 33.44,
+      "latency_ms": 36.49,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "CleanSweep",
+      "domain": "Utilities",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Clean Cache (1.2 GB)",
+      "expected_candidate": "Clean Cache (1.2 GB)",
+      "margin": 23.18,
+      "latency_ms": 37.1,
+      "pred_action": "CLICK"
+    },
+    {
+      "app": "TravelNest",
+      "domain": "Utilities",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Where do you want to stay?",
+      "expected_candidate": "Where do you want to stay?",
+      "margin": 34.7,
+      "latency_ms": 29.17,
+      "pred_action": "TYPE_TEXT"
+    },
+    {
+      "app": "RideEasy",
+      "domain": "Utilities",
+      "passed": true,
+      "target_correct": true,
+      "picked_candidate": "Where to?",
+      "expected_candidate": "Where to?",
+      "margin": 57.91,
+      "latency_ms": 33.25,
+      "pred_action": "TYPE_TEXT"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Zipper Sentry // Live Device Radar & Anti-Theft Command</title>
+  <meta name="description" content="Real-time anti-theft tracking, dual intruder mugshots, and telemetry radar for Zipper-protected devices.">
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Top Navigation Header -->
+  <header class="top-nav">
+    <div class="brand-group">
+      <div class="logo-shield">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <h1 class="brand-title">ZIPPER SENTRY // RADAR</h1>
+        <p class="brand-sub">Samsung Galaxy A26 • Live Telemetry Link</p>
+      </div>
+    </div>
+
+    <div class="header-status-group">
+      <div id="connectionStatus" class="status-pill status-connecting">
+        <span class="pulse-dot"></span>
+        <span class="status-text">CONNECTING SATELLITE...</span>
+      </div>
+      <div id="mimicBadge" class="badge-mimic hidden">
+        <span class="glitch-icon">⚠️</span> STEALTH LOCKDOWN
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Grid -->
+  <main class="dashboard-grid">
+    <!-- Map Container Section -->
+    <section class="map-wrapper">
+      <div id="radarMap"></div>
+      
+      <!-- Floating Map Overlays -->
+      <div class="map-floating-overlay top-left">
+        <div class="hud-pill distance-pill">
+          <span class="hud-icon">📍</span>
+          <span id="liveDistanceText">Locating viewer position...</span>
+        </div>
+      </div>
+
+      <div class="map-floating-overlay top-right">
+        <div class="map-control-btn-group">
+          <button id="btnCenterTarget" class="map-tool-btn" title="Center Stolen Phone">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="2" x2="12" y2="6"/>
+              <line x1="12" y1="18" x2="12" y2="22"/>
+              <line x1="2" y1="12" x2="6" y2="12"/>
+              <line x1="18" y1="12" x2="22" y2="12"/>
+            </svg>
+            Target
+          </button>
+          <button id="btnCenterMe" class="map-tool-btn" title="Center Your Location">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M2 12h2M20 12h2"/>
+            </svg>
+            Me
+          </button>
+          <button id="btnToggleTrail" class="map-tool-btn active" title="Toggle Path Trail">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 17 10 11 14 15 20 9"/>
+            </svg>
+            Trail
+          </button>
+        </div>
+      </div>
+
+      <div class="map-floating-overlay bottom-bar">
+        <a id="btnGoogleNavigate" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-radar">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+          </svg>
+          Navigate to Phone in Google Maps
+        </a>
+      </div>
+    </section>
+
+    <!-- Right Sidebar Telemetry & Evidence -->
+    <aside class="sidebar-panel">
+      <!-- Device Quick Telemetry Card -->
+      <div class="card telemetry-card">
+        <div class="card-header">
+          <h3>DEVICE TELEMETRY</h3>
+          <span id="lastPingTime" class="mono-tag">--:--:--</span>
+        </div>
+
+        <div class="telemetry-grid">
+          <div class="metric-box">
+            <span class="metric-label">BATTERY</span>
+            <div class="metric-val-wrap">
+              <span id="valBattery" class="metric-value">--%</span>
+              <span id="valCharging" class="metric-sub">STANDBY</span>
+            </div>
+            <div class="battery-meter"><div id="batteryMeterFill" class="meter-fill" style="width: 0%;"></div></div>
+          </div>
+
+          <div class="metric-box">
+            <span class="metric-label">SPEED</span>
+            <div class="metric-val-wrap">
+              <span id="valSpeed" class="metric-value">0.0</span>
+              <span class="metric-sub">KM/H</span>
+            </div>
+            <div class="meter-sub-text" id="valHeading">HEADING: --</div>
+          </div>
+
+          <div class="metric-box">
+            <span class="metric-label">GPS ACCURACY</span>
+            <div class="metric-val-wrap">
+              <span id="valAccuracy" class="metric-value">--</span>
+              <span class="metric-sub">METERS</span>
+            </div>
+            <div class="meter-sub-text" id="valAltitude">ALT: -- M</div>
+          </div>
+
+          <div class="metric-box">
+            <span class="metric-label">NETWORK</span>
+            <div class="metric-val-wrap">
+              <span id="valNetwork" class="metric-value text-sm">DETECTING</span>
+              <span id="valIP" class="metric-sub">--.---.--</span>
+            </div>
+            <div class="meter-sub-text" id="valSignal">RADIO: FORCED ON</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reverse-Geocoded Address & Nearby Card -->
+      <div class="card nearby-card">
+        <div class="card-header">
+          <h3>CURRENT LOCATION & NEARBY</h3>
+          <span class="live-dot-pulse">LIVE</span>
+        </div>
+        <div class="address-box">
+          <p id="fullAddressText" class="address-main">Resolving satellite coordinates...</p>
+          <div class="coords-row mono-text">
+            <span>LAT: <strong id="valLat">--.------</strong></span>
+            <span>LNG: <strong id="valLng">--.------</strong></span>
+          </div>
+        </div>
+
+        <div class="nearby-list-wrap">
+          <h4 class="section-subheading">NEARBY LANDMARKS & ESSENTIALS</h4>
+          <ul id="nearbyList" class="nearby-list">
+            <li class="nearby-item skeleton">Acquiring nearby points of interest...</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Intruder Photo Evidence Vault -->
+      <div class="card photo-vault-card">
+        <div class="card-header">
+          <h3>INTRUDER EVIDENCE VAULT</h3>
+          <span class="evidence-tag">DUAL CAPTURE</span>
+        </div>
+        <p class="photo-vault-desc">Headless automated snapshots taken upon trigger.</p>
+
+        <div class="dual-photo-grid">
+          <div class="photo-frame">
+            <div class="photo-label">FRONT CAMERA (THIEF FACE)</div>
+            <div class="img-container" id="frontPhotoContainer">
+              <img id="imgFrontMugshot" src="" alt="Front Intruder Mugshot" class="evidence-img hidden">
+              <div id="frontPhotoPlaceholder" class="photo-placeholder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <span>Awaiting front snapshot...</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <div class="photo-label">BACK CAMERA (ENVIRONMENT)</div>
+            <div class="img-container" id="backPhotoContainer">
+              <img id="imgBackSurroundings" src="" alt="Surroundings Evidence" class="evidence-img hidden">
+              <div id="backPhotoPlaceholder" class="photo-placeholder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>Awaiting scene snapshot...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Remote Control Commands -->
+      <div class="card actions-card">
+        <div class="card-header">
+          <h3>REMOTE SENTRY ACTIONS</h3>
+          <span class="mono-tag">ENCRYPTED</span>
+        </div>
+        <div class="actions-grid">
+          <button id="btnActionRing" class="action-btn btn-warning">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            </svg>
+            Sound Loud Alarm
+          </button>
+          
+          <button id="btnActionSnap" class="action-btn btn-info">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+            Force Instant Snap
+          </button>
+
+          <button id="btnActionBleScan" class="action-btn btn-accent">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"/>
+            </svg>
+            Scan Nearby BLE Chirp
+          </button>
+
+          <button id="btnActionDisarm" class="action-btn btn-danger">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+            </svg>
+            Disarm Stealth Mode
+          </button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Photo Lightbox Modal -->
+  <div id="photoLightbox" class="lightbox-modal hidden">
+    <div class="lightbox-content">
+      <button id="btnCloseLightbox" class="lightbox-close">&times;</button>
+      <img id="lightboxImg" src="" alt="Enlarged Evidence">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- Local Firebase Runtime Config (copy config.example.js -> config.js) -->
+  <script src="config.js"></script>
+  <!-- Custom Application Script -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

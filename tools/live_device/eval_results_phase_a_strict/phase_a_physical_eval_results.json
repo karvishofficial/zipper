@@ -1,0 +1,755 @@
+{
+  "timestamp": "2026-09-28 12:48:06",
+  "device_serial": "RZCY51MQP9K",
+  "device_model": "Samsung Galaxy A26 (SM-A266B)",
+  "model_version": "KarvishModelV51_7 (Phase A De-Spoonfed)",
+  "checkpoint": "v51_phase_a_best.pt",
+  "sealed_tasks": [
+    {
+      "task_id": "sealed_1_calculator",
+      "name": "Calculator: 85 * 6 -> clear",
+      "category": "SEALED",
+      "goal": "Open Calculator, calculate 85 * 6, then clear",
+      "package": "com.sec.android.app.popupcalculator",
+      "duration_sec": 35.97,
+      "completed_signal": false,
+      "stopped_signal": false,
+      "observable_success": false,
+      "observable_state_summary": "Calculator foreground: True, Formula aligned: True, 510 Computed: False, Clear Executed: False, Actions: 15",
+      "loop_detected": false,
+      "turn_count": 15,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('Calculator'))",
+          "target": "None",
+          "confidence": 0.9799,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 2,
+          "action": "Tap (Tap [#10] '8')",
+          "target": "None",
+          "confidence": 0.967,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#10] '8')",
+          "target": "None",
+          "confidence": 0.9469,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 4,
+          "action": "Tap (Tap [#13] '5')",
+          "target": "None",
+          "confidence": 0.6219,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "Tap (Tap [#13] '5')",
+          "target": "None",
+          "confidence": 0.6265,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 6,
+          "action": "Tap (Tap [#14] '6')",
+          "target": "None",
+          "confidence": 0.4789,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 7,
+          "action": "Tap (Tap [#14] '6')",
+          "target": "None",
+          "confidence": 0.535,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 8,
+          "action": "Tap (Tap [#12] '\u00d7')",
+          "target": "None",
+          "confidence": 0.999,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "Tap (Tap [#16] '2')",
+          "target": "None",
+          "confidence": 0.6967,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 10,
+          "action": "Tap (Tap [#12] '\u00d7')",
+          "target": "None",
+          "confidence": 0.999,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 11,
+          "action": "Tap (Tap [#16] '2')",
+          "target": "None",
+          "confidence": 0.728,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 12,
+          "action": "Tap (Tap [#12] '\u00d7')",
+          "target": "None",
+          "confidence": 0.9989,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 13,
+          "action": "Tap (Tap [#16] '2')",
+          "target": "None",
+          "confidence": 0.7379,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 14,
+          "action": "Tap (Tap [#12] '\u00d7')",
+          "target": "None",
+          "confidence": 0.9989,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 15,
+          "action": "Tap (Tap [#16] '2')",
+          "target": "None",
+          "confidence": 0.7415,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_1_calculator_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_1_calculator_ui_dump.xml"
+    },
+    {
+      "task_id": "sealed_2_youtube",
+      "name": "YouTube: search SpaceX -> view results -> back",
+      "category": "SEALED",
+      "goal": "Open YouTube, search for SpaceX, view results, then press back",
+      "package": "com.google.android.youtube",
+      "duration_sec": 12.02,
+      "completed_signal": true,
+      "stopped_signal": false,
+      "observable_success": true,
+      "observable_state_summary": "YouTube foreground: True, Typed SpaceX: True, Submitted: False, Results: True",
+      "loop_detected": false,
+      "turn_count": 6,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('YouTube'))",
+          "target": "None",
+          "confidence": 0.936,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#3] 'Search')",
+          "target": "None",
+          "confidence": 0.6862,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "TypeText (Type 'SpaceX' into [#2] 'Search YouTube')",
+          "target": "None",
+          "confidence": 0.9865,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 6,
+          "action": "PressBack (Press Back)",
+          "target": "None",
+          "confidence": 0.1834,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 8,
+          "action": "TypeText (Type 'SpaceX' into [#2] 'SpaceX')",
+          "target": "None",
+          "confidence": 0.6491,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "Tap (Tap [#5] 'spacex falcon 9 Edit suggestion spacex falcon 9')",
+          "target": "None",
+          "confidence": 0.4089,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_2_youtube_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_2_youtube_ui_dump.xml"
+    },
+    {
+      "task_id": "sealed_3_settings",
+      "name": "Settings: search Battery",
+      "category": "SEALED",
+      "goal": "Open Settings and search for Battery",
+      "package": "com.android.settings",
+      "duration_sec": 7.05,
+      "completed_signal": true,
+      "stopped_signal": false,
+      "observable_success": true,
+      "observable_state_summary": "Settings foreground: True, Tapped Battery: True, In Battery Screen: True",
+      "loop_detected": false,
+      "turn_count": 2,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('Settings'))",
+          "target": "None",
+          "confidence": 0.779,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 2,
+          "action": "Tap (Tap [#19] 'Battery')",
+          "target": "None",
+          "confidence": 0.7307,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_3_settings_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_3_settings_ui_dump.xml"
+    },
+    {
+      "task_id": "sealed_4_keep",
+      "name": "Keep: create note -> type \"Meeting Notes\" -> return",
+      "category": "SEALED",
+      "goal": "Open Keep, create note, type Meeting Notes, then return",
+      "package": "com.google.android.keep",
+      "duration_sec": 10.25,
+      "completed_signal": false,
+      "stopped_signal": true,
+      "observable_success": false,
+      "observable_state_summary": "Keep foreground: True, Typed Meeting Notes: False, Note Edit Open: True",
+      "loop_detected": false,
+      "turn_count": 5,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('Keep'))",
+          "target": "None",
+          "confidence": 0.7343,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#6] 'Sort notes')",
+          "target": "None",
+          "confidence": 0.2615,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "Tap (Tap [#3] 'Custom')",
+          "target": "None",
+          "confidence": 0.7309,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 7,
+          "action": "Tap (Tap [#6] 'Sort notes')",
+          "target": "None",
+          "confidence": 0.3735,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "Tap (Tap [#4] 'Date created')",
+          "target": "None",
+          "confidence": 0.8912,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_4_keep_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_4_keep_ui_dump.xml"
+    },
+    {
+      "task_id": "sealed_5_playstore",
+      "name": "Play Store: search Chess -> open/top result",
+      "category": "SEALED",
+      "goal": "Open Play Store, search for Chess, and view top result",
+      "package": "com.android.vending",
+      "duration_sec": 40.63,
+      "completed_signal": false,
+      "stopped_signal": false,
+      "observable_success": true,
+      "observable_state_summary": "Play Store foreground: True, Typed Chess: True, Chess Results: True",
+      "loop_detected": false,
+      "turn_count": 8,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('Play'))",
+          "target": "None",
+          "confidence": 0.9863,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#45] 'Search')",
+          "target": "None",
+          "confidence": 0.4852,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "Tap (Tap [#31] 'Search Google Play')",
+          "target": "None",
+          "confidence": 0.4839,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 7,
+          "action": "Tap (Tap [#19] 'Search for 'chess' Refine search to 'chess'')",
+          "target": "None",
+          "confidence": 0.2333,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "Tap (Tap [#25] 'Search Google Play')",
+          "target": "None",
+          "confidence": 0.6485,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 11,
+          "action": "Tap (Tap [#5] 'Search for 'chess' Refine search to 'chess'')",
+          "target": "None",
+          "confidence": 0.0839,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 13,
+          "action": "Tap (Tap [#25] 'Search Google Play')",
+          "target": "None",
+          "confidence": 0.6731,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 15,
+          "action": "Tap (Tap [#8] 'Search for 'chess club' Refine search to 'chess club'')",
+          "target": "None",
+          "confidence": 0.0905,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_5_playstore_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\sealed_5_playstore_ui_dump.xml"
+    }
+  ],
+  "regression_tasks": [
+    {
+      "task_id": "reg_1_youtube_lofi",
+      "name": "YouTube: search \"lo-fi hip hop\"",
+      "category": "REGRESSION_SEARCH",
+      "goal": "Open YouTube and search for lo-fi hip hop",
+      "package": "com.google.android.youtube",
+      "duration_sec": 18.99,
+      "completed_signal": true,
+      "stopped_signal": false,
+      "observable_success": true,
+      "observable_state_summary": "YouTube foreground: True, Typed Query: True, Query Results: True",
+      "loop_detected": false,
+      "turn_count": 12,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('YouTube'))",
+          "target": "None",
+          "confidence": 0.9387,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 2,
+          "action": "Tap (Tap [#4] 'Search')",
+          "target": "None",
+          "confidence": 0.2918,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "TypeText (Type 'lo-fi hip hop' into [#2] 'Search YouTube')",
+          "target": "None",
+          "confidence": 0.8205,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 4,
+          "action": "Tap (Tap [#14] 'lofi hip hop lofi hip hop no lyrics Edit suggestion lofi hip hop lofi hip hop no lyrics')",
+          "target": "None",
+          "confidence": 0.1568,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "Tap (Tap [#1] 'lofi hip hop lofi hip hop no lyrics')",
+          "target": "None",
+          "confidence": 0.9794,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 6,
+          "action": "TypeText (Type 'lo-fi hip hop' into [#2] 'lofi hip hop lofi hip hop no lyrics')",
+          "target": "None",
+          "confidence": 0.9963,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 7,
+          "action": "Submit (Submit focused field)",
+          "target": "None",
+          "confidence": 0.5998,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 8,
+          "action": "Tap (Tap [#1] 'lo-fi hip hop')",
+          "target": "None",
+          "confidence": 0.9881,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "TypeText (Type 'lo-fi hip hop' into [#2] 'lo-fi hip hop')",
+          "target": "None",
+          "confidence": 0.8799,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 10,
+          "action": "Tap (Tap [#14] 'lofi hip hop lofi hip hop no lyrics Edit suggestion lofi hip hop lofi hip hop no lyrics')",
+          "target": "None",
+          "confidence": 0.14,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 11,
+          "action": "Tap (Tap [#1] 'lofi hip hop lofi hip hop no lyrics')",
+          "target": "None",
+          "confidence": 0.9791,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 12,
+          "action": "Scroll (Scroll DOWN)",
+          "target": "None",
+          "confidence": 0.1162,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\reg_1_youtube_lofi_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\reg_1_youtube_lofi_ui_dump.xml"
+    },
+    {
+      "task_id": "reg_2_linkedin_se",
+      "name": "LinkedIn: search \"software engineer\"",
+      "category": "REGRESSION_SEARCH",
+      "goal": "Open LinkedIn and search for software engineer",
+      "package": "com.linkedin.android",
+      "duration_sec": 17.24,
+      "completed_signal": false,
+      "stopped_signal": true,
+      "observable_success": true,
+      "observable_state_summary": "LinkedIn foreground: True, Typed Query: True, Results Present: True",
+      "loop_detected": true,
+      "turn_count": 10,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('LinkedIn'))",
+          "target": "None",
+          "confidence": 0.8377,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 2,
+          "action": "Tap (Tap [#23] 'View image')",
+          "target": "None",
+          "confidence": 0.1941,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#12] 'I didn\u2019t expect one WhatsApp message to make me this emotional. \ud83e\udd79\u2764\ufe0f\u2026\u00a0more')",
+          "target": "None",
+          "confidence": 0.5003,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 4,
+          "action": "Scroll (Scroll DOWN)",
+          "target": "None",
+          "confidence": 0.4651,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "Tap (Tap [#37] 'View company: JPMorganChase')",
+          "target": "None",
+          "confidence": 0.2153,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 8,
+          "action": "Tap (Tap [#7] '10K+ employees')",
+          "target": "None",
+          "confidence": 0.3071,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 10,
+          "action": "Tap (Tap [#1] 'Search')",
+          "target": "None",
+          "confidence": 0.5436,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 11,
+          "action": "TypeText (Type 'software engineer' into [#2] 'Search')",
+          "target": "None",
+          "confidence": 0.9894,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 12,
+          "action": "Tap (Tap [#8] 'Insert suggestion software engineer intern 2021')",
+          "target": "None",
+          "confidence": 0.2246,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 13,
+          "action": "Tap (Tap [#8] 'Insert suggestion software engineer intern 2021')",
+          "target": "None",
+          "confidence": 0.4788,
+          "latency_ms": 0,
+          "verification": "NO_OP"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\reg_2_linkedin_se_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\reg_2_linkedin_se_ui_dump.xml"
+    },
+    {
+      "task_id": "reg_3_instagram_photo",
+      "name": "Instagram: search \"photography\"",
+      "category": "REGRESSION_SEARCH",
+      "goal": "Open Instagram and search for photography",
+      "package": "com.instagram.android",
+      "duration_sec": 34.62,
+      "completed_signal": false,
+      "stopped_signal": true,
+      "observable_success": false,
+      "observable_state_summary": "Instagram foreground: True, Typed Photography: True, Results Present: False",
+      "loop_detected": false,
+      "turn_count": 15,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 1,
+          "action": "OpenApp (OpenApp('Instagram'))",
+          "target": "None",
+          "confidence": 0.8418,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 2,
+          "action": "Tap (Tap [#32] '213')",
+          "target": "None",
+          "confidence": 0.1883,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 3,
+          "action": "Tap (Tap [#49] '214')",
+          "target": "None",
+          "confidence": 0.3106,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 4,
+          "action": "Tap (Tap [#89] '214')",
+          "target": "None",
+          "confidence": 0.2934,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 5,
+          "action": "Tap (Tap [#49] '214')",
+          "target": "None",
+          "confidence": 0.3679,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 6,
+          "action": "Tap (Tap [#89] '214')",
+          "target": "None",
+          "confidence": 0.2749,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 7,
+          "action": "Tap (Tap [#89] '214')",
+          "target": "None",
+          "confidence": 0.3054,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 8,
+          "action": "Tap (Tap [#37] '214')",
+          "target": "None",
+          "confidence": 0.3071,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "Tap (Tap [#8] 'Instagram')",
+          "target": "None",
+          "confidence": 0.5329,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 10,
+          "action": "Tap (Tap [#8] 'Instagram')",
+          "target": "None",
+          "confidence": 0.5541,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 11,
+          "action": "Tap (Tap [#4] 'YouTube')",
+          "target": "None",
+          "confidence": 0.31,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 12,
+          "action": "TypeText (Type 'photography' into [#2] 'lofi hip hop lofi hip hop no lyrics')",
+          "target": "None",
+          "confidence": 0.5229,
+          "latency_ms": 0,
+          "verification": "WRONG_SCREEN"
+        },
+        {
+          "turn": 13,
+          "action": "Tap (Tap [#6] 'Instagram')",
+          "target": "None",
+          "confidence": 0.6269,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 14,
+          "action": "Tap (Tap [#36] 'Notifications')",
+          "target": "None",
+          "confidence": 0.7377,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 15,
+          "action": "Tap (Tap [#36] 'Notifications')",
+          "target": "None",
+          "confidence": 0.7368,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\reg_3_instagram_photo_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_phase_a_strict\\reg_3_instagram_photo_ui_dump.xml"
+    }
+  ],
+  "summary": {
+    "sealed_passed": 3,
+    "sealed_total": 5,
+    "sealed_pass_rate": 60.0,
+    "regression_passed": 2,
+    "regression_total": 3,
+    "regression_pass_rate": 66.7
+  }
+}

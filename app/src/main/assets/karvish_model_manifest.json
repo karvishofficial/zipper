@@ -1,0 +1,18 @@
+{
+  "model_name": "Karvish-Mobile-Action-Model",
+  "deployment_ready": true,
+  "deployment_status": "production_released_p14",
+  "release_version": "v31.0.0-p14-release",
+  "release_size_gate_mb": 50,
+  "model_file": "karvish_action_model.pt",
+  "model_size_bytes": 18440581,
+  "model_sha256": "de9830c4919500343b8484d6a16cfdcae2a23b8decd05033e73029545a9d184b",
+  "argument_heads_file": "argument_heads_fp16.pt",
+  "argument_heads_size_bytes": 8053,
+  "tokenizer_file": "tokenizer.model",
+  "tokenizer_size_bytes": 132396,
+  "total_bundle_size_bytes": 18581725,
+  "total_bundle_size_mb": 17.72,
+  "rollback_version": "v28.0.0-converged",
+  "offline_locality": "100% On-Device"
+}

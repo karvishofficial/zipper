@@ -1,0 +1,18 @@
+{
+  "dataset_train": "tools/training/experiment_c_needle2/data/sanity_50.jsonl",
+  "dataset_val": "tools/training/experiment_c_needle2/data/needle_val.jsonl",
+  "train_samples": 50,
+  "val_samples": 77,
+  "epochs": 2,
+  "batch_size": 1,
+  "grad_accum": 4,
+  "effective_batch_size": 4,
+  "learning_rate": 0.0002,
+  "lora_rank": 16,
+  "lora_dropout": 0.05,
+  "total_steps": 24,
+  "total_duration_sec": 87.82421159744263,
+  "throughput_samples_per_sec": 1.138638174839157,
+  "peak_vram_mb": 3288.513671875,
+  "best_val_loss": 0.3028323178167467
+}

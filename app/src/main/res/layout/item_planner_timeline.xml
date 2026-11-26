@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- 1. LEFT COLUMN: TIME & DURATION -->
+    <LinearLayout
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTimelineItemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="18:30"
+            android:textColor="#111827"
+            android:textSize="13.5sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTimelineItemDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 min"
+            android:textColor="#6B7280"
+            android:textSize="10.5sp" />
+    </LinearLayout>
+
+    <!-- 2. CENTER COLUMN: VERTICAL TIMELINE LINE & NODE DOT -->
+    <LinearLayout
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Upper connecting segment -->
+        <View
+            android:id="@+id/viewTimelineTopLine"
+            android:layout_width="2dp"
+            android:layout_height="14dp"
+            android:background="#BFDBFE" />
+
+        <!-- Node Dot -->
+        <FrameLayout
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/bg_badge_pill_warm"
+            android:backgroundTint="#2563EB">
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_badge_pill_warm"
+                android:backgroundTint="#FFFFFF" />
+        </FrameLayout>
+
+        <!-- Lower connecting segment -->
+        <View
+            android:id="@+id/viewTimelineBottomLine"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#BFDBFE" />
+    </LinearLayout>
+
+    <!-- 3. RIGHT COLUMN: EVENT CARD -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_card_clean_white"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Category Icon Box -->
+            <FrameLayout
+                android:id="@+id/flTimelineCategoryIconBox"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_pill_clean_blue">
+
+                <ImageView
+                    android:id="@+id/ivTimelineCategoryIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_fitness"
+                    app:tint="#2563EB" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTimelineItemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="Evening Workout &amp; Stretch"
+                    android:textColor="#111827"
+                    android:textSize="14.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Category Tag Pill -->
+            <TextView
+                android:id="@+id/tvTimelineCategoryPill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_pill_tag_fitness"
+                android:fontFamily="sans-serif-bold"
+                android:paddingStart="8dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="3dp"
+                android:text="FITNESS"
+                android:textColor="#15803D"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <!-- Awakening Call Indicator Badge -->
+            <TextView
+                android:id="@+id/tvTimelineCallBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_pill_clean_blue"
+                android:backgroundTint="#EFF6FF"
+                android:fontFamily="sans-serif-bold"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="2dp"
+                android:text="📞 6:25 PM"
+                android:textColor="#2563EB"
+                android:textSize="9.5sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Options Menu / Quick Call Button -->
+            <ImageButton
+                android:id="@+id/btnTimelineItemOptions"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Options"
+                android:src="@drawable/ic_more_vert"
+                app:tint="#9CA3AF" />
+        </LinearLayout>
+
+        <!-- AI Proof / Reasoning Pill -->
+        <LinearLayout
+            android:id="@+id/llTimelineAiProof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_pill_clean_blue"
+            android:backgroundTint="#F5F3FF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_sparkle"
+                app:tint="#6D28D9" />
+
+            <TextView
+                android:id="@+id/tvTimelineAiProofText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="AI Proof: Scheduled 45m tonight to prepare resume before drive"
+                android:textColor="#6D28D9"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Action Brief -->
+        <TextView
+            android:id="@+id/tvTimelineItemNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="2dp"
+            android:text="Stay active! 30-minute cardio and mobility routine."
+            android:textColor="#374151"
+            android:textSize="12.5sp" />
+
+        <!-- Interactive Checklist Items Container -->
+        <LinearLayout
+            android:id="@+id/llTimelineChecklistContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <!-- Collapsible Original Context -->
+        <TextView
+            android:id="@+id/tvTimelineToggleContext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="View Original Message ▼"
+            android:textColor="#2563EB"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTimelineFullContext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#F8FAFC"
+            android:lineSpacingExtra="1.5dp"
+            android:padding="8dp"
+            android:textColor="#6B7280"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <!-- 1. Dedicated Multi-App Candidate Container (Full Width) -->
+        <LinearLayout
+            android:id="@+id/llTimelineCandidateAppsRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Apps:"
+                android:textColor="#9CA3AF"
+                android:textSize="11sp" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/llTimelineCandidateApps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- 2. Dedicated Action Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- ⚡ Auto-Do Action Button -->
+            <LinearLayout
+                android:id="@+id/btnTimelineAutoDo"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_pill_clean_blue"
+                android:backgroundTint="#EEF2FF"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <ImageView
+                    android:id="@+id/ivTimelineAutoDoIcon"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_bolt"
+                    app:tint="#4F46E5" />
+
+                <TextView
+                    android:id="@+id/tvTimelineAutoDoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="⚡ Auto-Do"
+                    android:textColor="#4F46E5"
+                    android:textSize="11.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Call Now Action Button -->
+            <LinearLayout
+                android:id="@+id/btnTimelineCallNow"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_pill_clean_blue"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="📞 Call Now"
+                    android:textColor="#2563EB"
+                    android:textSize="11.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

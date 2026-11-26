@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    tools:context=".MainActivity">
+
+    <!-- ============================================================= -->
+    <!-- SCROLLABLE CONTENT CANVAS (Above Fixed Bottom Nav Dock)       -->
+    <!-- ============================================================= -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavBar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="28dp">
+
+            <!-- ============================================================= -->
+            <!-- TOP APP BAR: ZIPPER BRAND & PROFILE                           -->
+            <!-- ============================================================= -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="8dp">
+
+                <!-- Left Brand Block -->
+                <LinearLayout
+                    android:id="@+id/llBrandBlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_zipper_logo_z" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:includeFontPadding="false"
+                            android:text="Zipper"
+                            android:textColor="#111827"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:letterSpacing="0.04"
+                            android:text="Think · See · Act · With You"
+                            android:textColor="#6B7280"
+                            android:textSize="9.5sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Right Action Icons (Notifications & Profile) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnHeaderNotifications"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Notifications"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_bell" />
+
+                    <!-- User Profile Avatar Pill -->
+                    <FrameLayout
+                        android:id="@+id/btnUserProfileAvatar"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_profile_avatar"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/tvProfileLetter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-bold"
+                            android:text="K"
+                            android:textColor="#111827"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <!-- Real 3-Dots Menu Button -->
+                    <ImageButton
+                        android:id="@+id/btnHeaderMore"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Settings and Options"
+                        android:padding="6dp"
+                        app:tint="#374151"
+                        android:src="@drawable/ic_more_vert" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- ============================================================= -->
+            <!-- HERO BANNER: 3D CHARACTER MASCOT & DYNAMIC GREETING           -->
+            <!-- ============================================================= -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="285dp">
+
+                <!-- High-Res 3D Mascot Art (Clean of baked text) -->
+                <ImageView
+                    android:id="@+id/ivHeroMascotBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_zipper_hero_mascot" />
+
+                <!-- Top Gradient Scrim to smoothly blend behind header -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/bg_scrim_top" />
+
+                <!-- Bottom Gradient Scrim to smoothly blend into prompt bar -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bg_scrim_bottom" />
+
+                <!-- Dynamic Text Overlay Layer (Left Aligned) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|top"
+                    android:orientation="vertical"
+                    android:paddingStart="22dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/tvHeroGreetingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Good morning,"
+                        android:textColor="#374151"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvHeroUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:includeFontPadding="false"
+                            android:text="Karthik"
+                            android:textColor="#111827"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvHeroSunIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="☀️"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvHeroQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="2dp"
+                        android:text="What shall we do\ntoday?"
+                        android:textColor="#374151"
+                        android:textSize="17sp" />
+
+                    <!-- Inspirational Quote Note with Left Accent Line -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="2.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="8dp"
+                            android:background="#D97706" />
+
+                        <TextView
+                            android:id="@+id/tvHeroQuote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:lineSpacingExtra="2dp"
+                            android:shadowColor="#FFFFFF"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="2"
+                            android:text="&quot;Same goals.\nNew possibilities.\nTogether.&quot;\n  — Zipper"
+                            android:textColor="#1F2937"
+                            android:textSize="12sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- ============================================================= -->
+            <!-- FLOATING PILL COMMAND BAR                                     -->
+            <!-- ============================================================= -->
+            <RelativeLayout
+                android:id="@+id/rlCommandBarContainer"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_command_bar_light"
+                android:elevation="6dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <!-- Voice Mic Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnVoiceInput"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#F3F4F6"
+                    android:contentDescription="Voice Input"
+                    app:icon="@drawable/ic_mic"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="20dp"
+                    app:iconTint="#374151" />
+
+                <!-- Text Input Field -->
+                <EditText
+                    android:id="@+id/etAgentGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_toStartOf="@+id/llCommandRightControls"
+                    android:layout_toEndOf="@id/btnVoiceInput"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="Ask Zipper or give a command..."
+                    android:imeOptions="actionGo"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="#111827"
+                    android:textColorHint="#9CA3AF"
+                    android:textSize="13sp" />
+
+                <!-- Right Action Buttons (Camera & Send) -->
+                <LinearLayout
+                    android:id="@+id/llCommandRightControls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- Vision / Camera Button -->
+                    <ImageButton
+                        android:id="@+id/btnCameraVision"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Camera"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_camera"
+                        app:tint="#4B5563" />
+
+                    <!-- Send Action Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRunAgentGoal"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#111827"
+                        android:contentDescription="Run Goal"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/ic_send"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp"
+                        app:iconSize="18dp"
+                        app:iconTint="#FFFFFF" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- ============================================================= -->
+            <!-- 4 QUICK ACTION CARDS (HORIZONTAL ROW)                         -->
+            <!-- ============================================================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <!-- Card 1: Research -->
+                <LinearLayout
+                    android:id="@+id/cardQuickResearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_action_card_light"
+                    android:clickable="true"
+                    android:elevation="1.5dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle_soft_blue"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_search"
+                        app:tint="#2563EB" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-bold"
+                        android:text="Research"
+                        android:textColor="#111827"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Find anything"
+                        android:textColor="#9CA3AF"
+                        android:textSize="9.5sp" />
+                </LinearLayout>
+
+                <!-- Card 2: Open App -->
+                <LinearLayout
+                    android:id="@+id/cardQuickOpenApp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_action_card_light"
+                    android:clickable="true"
+                    android:elevation="1.5dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle_soft_purple"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_grid_view"
+                        app:tint="#7C3AED" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-bold"
+                        android:text="Open App"
+                        android:textColor="#111827"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="On your phone"
+                        android:textColor="#9CA3AF"
+                        android:textSize="9.5sp" />
+                </LinearLayout>
+
+                <!-- Card 3: Plan Task -->
+                <LinearLayout
+                    android:id="@+id/cardQuickPlanTask"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_action_card_light"
+                    android:clickable="true"
+                    android:elevation="1.5dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle_soft_green"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_calendar"
+                        app:tint="#059669" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-bold"
+                        android:text="Plan Task"
+                        android:textColor="#111827"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Schedule &amp; do"
+                        android:textColor="#9CA3AF"
+                        android:textSize="9.5sp" />
+                </LinearLayout>
+
+                <!-- Card 4: Take Action -->
+                <LinearLayout
+                    android:id="@+id/cardQuickTakeAction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_action_card_light"
+                    android:clickable="true"
+                    android:elevation="1.5dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_circle_soft_amber"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_bolt"
+                        app:tint="#D97706" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-bold"
+                        android:text="Take Action"
+                        android:textColor="#111827"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Do it for me"
+                        android:textColor="#9CA3AF"
+                        android:textSize="9.5sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ============================================================= -->
+            <!-- REMOTE SECURITY & PASSWORD STATUS CARD                        -->
+            <!-- ============================================================= -->
+            <LinearLayout
+                android:id="@+id/cardRemoteSecurityStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_action_card_light"
+                android:clickable="true"
+                android:elevation="1.5dp"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingTop="11dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="11dp">
+
+                <TextView
+                    android:id="@+id/tvRemoteSecurityIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔐"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRemoteSecurityTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-bold"
+                        android:text="Remote Password: #1234"
+                        android:textColor="#111827"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRemoteSecuritySubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="sans-serif"
+                        android:text="WhatsApp/SMS commands active • Tap to change PIN or view guide"
+                        android:textColor="#6B7280"
+                        android:textSize="10.5sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pill_clean_blue"
+                    android:backgroundTint="#FEF3C7"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Change"
+                    android:textColor="#D97706"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- ============================================================= -->
+            <!-- RECENT MISSIONS (100% REAL DEVICE TASK ENGINE)                -->
+            <!-- ============================================================= -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp">
+
+                <!-- Left Section Header with Black Indicator Bar -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="3.5dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#111827" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-bold"
+                        android:text="Recent Missions"
+                        android:textColor="#111827"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSeeAllRecentTasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="See all &gt;"
+                    android:textColor="#6B7280"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <!-- Dynamic Mission List Container -->
+            <LinearLayout
+                android:id="@+id/llRecentTasksContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <!-- Empty State (Shown when no tasks run yet) -->
+                <LinearLayout
+                    android:id="@+id/llRecentTasksEmptyState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_mission_card_light"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_history"
+                        app:tint="#9CA3AF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="No missions completed yet"
+                        android:textColor="#374151"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Enter a command above or tap an action card to begin"
+                        android:textColor="#9CA3AF"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ============================================================= -->
+            <!-- DUAL SECTION: TODAY'S FOCUS & ZIPPER SUGGESTIONS              -->
+            <!-- ============================================================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <!-- CARD 1: Today's Focus -->
+                <LinearLayout
+                    android:id="@+id/cardTodaysFocus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_split_card_light"
+                    android:elevation="1.5dp"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <!-- Title Row -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="sans-serif-bold"
+                            android:text="Today's Focus"
+                            android:textColor="#111827"
+                            android:textSize="13.5sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="#9CA3AF" />
+                    </RelativeLayout>
+
+                    <!-- Item 1: Finish college project (Completed) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_check_circle"
+                            app:tint="#3B82F6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:text="Finish college project"
+                            android:textColor="#374151"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Item 2: Check laptop prices -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_circle_outline"
+                            app:tint="#9CA3AF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:text="Check laptop prices"
+                            android:textColor="#4B5563"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Item 3: Workout (30 mins) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_circle_outline"
+                            app:tint="#9CA3AF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:text="Workout (30 mins)"
+                            android:textColor="#4B5563"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- CARD 2: Zipper Suggestions -->
+                <LinearLayout
+                    android:id="@+id/cardZipperSuggestions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_split_card_light"
+                    android:elevation="1.5dp"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <!-- Title Row -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="✨"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-bold"
+                                android:text="Zipper Suggestions"
+                                android:textColor="#111827"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/btnRefreshSuggestions"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_refresh"
+                            app:tint="#9CA3AF" />
+                    </RelativeLayout>
+
+                    <!-- Suggestion 1: Amazon wishlist -->
+                    <LinearLayout
+                        android:id="@+id/rowSuggestAmazon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="6dp"
+                            android:src="@drawable/ic_amazon" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:text="Check price drop on wishlist"
+                            android:textColor="#374151"
+                            android:textSize="11.5sp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="#9CA3AF" />
+                    </LinearLayout>
+
+                    <!-- Suggestion 2: Plan tomorrow -->
+                    <LinearLayout
+                        android:id="@+id/rowSuggestPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="6dp"
+                            android:src="@drawable/ic_calendar"
+                            app:tint="#059669" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:text="Plan your tomorrow"
+                            android:textColor="#374151"
+                            android:textSize="11.5sp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="#9CA3AF" />
+                    </LinearLayout>
+
+                    <!-- Suggestion 3: Workout playlist -->
+                    <LinearLayout
+                        android:id="@+id/rowSuggestWorkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="6dp"
+                            android:src="@drawable/ic_fitness"
+                            app:tint="#374151" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="1"
+                            android:text="Start workout playlist"
+                            android:textColor="#374151"
+                            android:textSize="11.5sp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/ic_chevron_right"
+                            app:tint="#9CA3AF" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ============================================================= -->
+            <!-- COMPATIBILITY HOLDER (Keeps all legacy variables bound)       -->
+            <!-- ============================================================= -->
+            <LinearLayout
+                android:id="@+id/legacyBindingHolder"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View android:id="@+id/hero3dCoreView" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/badgeUnderstand" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/badgeFindApps" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/badgePlanExecute" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/badgeVerifyDeliver" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvLiveStatusBadge" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvServiceStatus" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnEnableService" android:layout_width="0dp" android:layout_height="0dp" />
+                <RadioGroup android:id="@+id/rgEngine" android:layout_width="0dp" android:layout_height="0dp">
+                    <RadioButton android:id="@+id/rbOnDevice" android:layout_width="0dp" android:layout_height="0dp" />
+                    <RadioButton android:id="@+id/rbRemoteGpu" android:layout_width="0dp" android:layout_height="0dp" />
+                </RadioGroup>
+                <Button android:id="@+id/btnPresetInsta" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnPresetLinkedin" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnPresetCalc" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnPresetYoutube" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnPresetCall" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnPresetZepto" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnSetDialer" android:layout_width="0dp" android:layout_height="0dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnHardStop" android:layout_width="0dp" android:layout_height="0dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnDittoRecord" android:layout_width="0dp" android:layout_height="0dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnDittoReplay" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvTurnCounter" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvAgentAuditLog" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnOpenWebAssistant" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/llSentryContainer" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvSentryIcon" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvSentryLabel" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/llExpenseContainer" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvExpenseLabel" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/llSecurityTestContainer" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvSecurityIcon" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvSecurityLabel" android:layout_width="0dp" android:layout_height="0dp" />
+                <TextView android:id="@+id/tvActiveRemindersStatus" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnSetCallReminder" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnTestCallNow" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnTalkToZipper" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnToggleWakeWord" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnTrainVoice" android:layout_width="0dp" android:layout_height="0dp" />
+                <Button android:id="@+id/btnToggleFloatingBubble" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/cardWebAssistant" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/rowRecentTask1" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/rowRecentTask2" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/rowRecentTask3" android:layout_width="0dp" android:layout_height="0dp" />
+                <View android:id="@+id/rowRecentTask4" android:layout_width="0dp" android:layout_height="0dp" />
+                <ImageButton android:id="@+id/btnHeaderSearch" android:layout_width="0dp" android:layout_height="0dp" />
+                <ImageButton android:id="@+id/btnHeaderHistory" android:layout_width="0dp" android:layout_height="0dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ============================================================= -->
+    <!-- BOTTOM NAVIGATION BAR (WARM DAYLIGHT DOCK)                    -->
+    <!-- ============================================================= -->
+    <!-- Planner Section Dashboard (Middle Nav Tab Screen) -->
+    <include layout="@layout/view_planner_dashboard" />
+
+    <!-- Webmind Section Dashboard (Zero-Lag Nav Tab Screen) -->
+    <include layout="@layout/view_webmind_dashboard" />
+
+    <!-- ============================================================= -->
+    <!-- FIXED BOTTOM NAVIGATION BAR DOCK                              -->
+    <!-- ============================================================= -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_nav_light"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <!-- TAB 1: Agent (Active) -->
+        <FrameLayout
+            android:id="@+id/tabAgent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:id="@+id/llTabAgentPill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_nav_active_pill_warm"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="14dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/ivTabAgentIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_mascot_agent" />
+
+                <TextView
+                    android:id="@+id/tvTabAgentLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="Agent"
+                    android:textColor="#111827"
+                    android:textSize="10.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- TAB 2: Webmind -->
+        <LinearLayout
+            android:id="@+id/tabWebmind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivTabWebmindIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_globe"
+                app:tint="#6B7280" />
+
+            <TextView
+                android:id="@+id/tvTabWebmindLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true"
+                android:text="Webmind"
+                android:textColor="#6B7280"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- TAB 3: Planner (Middle Tab!) -->
+        <LinearLayout
+            android:id="@+id/tabPlanner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivTabPlannerIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_calendar"
+                app:tint="#6B7280" />
+
+            <TextView
+                android:id="@+id/tvTabPlannerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Planner"
+                android:textColor="#6B7280"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- TAB 4: Ditto -->
+        <LinearLayout
+            android:id="@+id/tabDitto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivTabDittoIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_ditto"
+                app:tint="#6B7280" />
+
+            <TextView
+                android:id="@+id/tvTabDittoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Ditto"
+                android:textColor="#6B7280"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- TAB 5: Control -->
+        <LinearLayout
+            android:id="@+id/tabSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivTabSettingsIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_tune"
+                app:tint="#6B7280" />
+
+            <TextView
+                android:id="@+id/tvTabSettingsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Control"
+                android:textColor="#6B7280"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

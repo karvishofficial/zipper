@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollWebmindHistory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingBottom="40dp">
+
+        <!-- ============================================================= -->
+        <!-- SEARCH BOX                                                    -->
+        <!-- ============================================================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_command_bar_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_search"
+                app:tint="#6B7280" />
+
+            <EditText
+                android:id="@+id/etSearchHistoryQuery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Search your research..."
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_mic"
+                app:tint="#4B5563" />
+        </LinearLayout>
+
+        <!-- ============================================================= -->
+        <!-- CATEGORY FILTER CHIPS                                         -->
+        <!-- ============================================================= -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chipHistAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_filter_pill_black"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11.5sp" />
+
+                <TextView
+                    android:id="@+id/chipHistSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="Search"
+                    android:textColor="#4B5563"
+                    android:textSize="11.5sp" />
+
+                <TextView
+                    android:id="@+id/chipHistCompare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="Compare"
+                    android:textColor="#4B5563"
+                    android:textSize="11.5sp" />
+
+                <TextView
+                    android:id="@+id/chipHistTrack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="Track"
+                    android:textColor="#4B5563"
+                    android:textSize="11.5sp" />
+
+                <TextView
+                    android:id="@+id/chipHistSummarize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="Summarize"
+                    android:textColor="#4B5563"
+                    android:textSize="11.5sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- ============================================================= -->
+        <!-- DYNAMIC HISTORY TIMELINE CONTAINER                           -->
+        <!-- ============================================================= -->
+        <LinearLayout
+            android:id="@+id/llHistoryItemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

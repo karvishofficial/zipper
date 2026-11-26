@@ -1,0 +1,11 @@
+# Python 3.11+ dependencies for Karvish ML training, ONNX export, and live GPU server
+torch>=2.1.0
+transformers>=4.40.0
+onnx>=1.15.0
+onnxruntime>=1.17.0
+numpy>=1.24.0
+safetensors>=0.4.0
+sentencepiece>=0.2.0
+huggingface-hub>=0.22.0
+pillow>=10.0.0
+pytest>=8.0.0

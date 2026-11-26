@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-09-29 10:01:47",
+  "device_serial": "192.168.31.105:5555",
+  "device_model": "SM-A266B",
+  "model_version": "KarvishModelV51_7 (Phase A De-Spoonfed)",
+  "checkpoint": "v51_phase_a_best.pt",
+  "sealed_tasks": [
+    {
+      "task_id": "sealed_2_youtube",
+      "name": "YouTube: search SpaceX -> view results -> back",
+      "category": "SEALED",
+      "goal": "Open YouTube, search for SpaceX, view results, then press back",
+      "package": "com.google.android.youtube",
+      "duration_sec": 23.43,
+      "completed_signal": true,
+      "stopped_signal": false,
+      "observable_success": false,
+      "observable_state_summary": "YouTube foreground: True, Typed SpaceX: False, Submitted: False, Results: False",
+      "loop_detected": false,
+      "turn_count": 6,
+      "avg_latency_ms": 0.0,
+      "actions": [
+        {
+          "turn": 8,
+          "action": "Tap (Tap [#23] 'Home')",
+          "target": "None",
+          "confidence": 0.0648,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 9,
+          "action": "PressBack (Press Back)",
+          "target": "None",
+          "confidence": 0.0528,
+          "latency_ms": 0,
+          "verification": "WRONG_SCREEN"
+        },
+        {
+          "turn": 11,
+          "action": "OpenApp (OpenApp('YouTube'))",
+          "target": "None",
+          "confidence": 0.6424,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 12,
+          "action": "Tap (Tap [#26] 'Home')",
+          "target": "None",
+          "confidence": 0.0605,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        },
+        {
+          "turn": 13,
+          "action": "PressBack (Press Back)",
+          "target": "None",
+          "confidence": 0.0502,
+          "latency_ms": 0,
+          "verification": "WRONG_SCREEN"
+        },
+        {
+          "turn": 15,
+          "action": "OpenApp (OpenApp('YouTube'))",
+          "target": "None",
+          "confidence": 0.6406,
+          "latency_ms": 0,
+          "verification": "SUCCESS"
+        }
+      ],
+      "screenshot": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_v51_7\\sealed_2_youtube_final_screen.png",
+      "ui_dump": "C:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\live_device\\eval_results_v51_7\\sealed_2_youtube_ui_dump.xml"
+    }
+  ],
+  "regression_tasks": [],
+  "summary": {
+    "sealed_passed": 0,
+    "sealed_total": 1,
+    "sealed_pass_rate": 0.0,
+    "regression_passed": 0,
+    "regression_total": 0,
+    "regression_pass_rate": 0.0
+  }
+}

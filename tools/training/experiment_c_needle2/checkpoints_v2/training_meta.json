@@ -1,0 +1,20 @@
+{
+  "dataset_train": "tools/training/experiment_c_needle2/data/needle_train.jsonl",
+  "dataset_val": "tools/training/experiment_c_needle2/data/needle_val.jsonl",
+  "train_samples": 736,
+  "val_samples": 77,
+  "epochs": 3,
+  "batch_size": 1,
+  "grad_accum": 4,
+  "effective_batch_size": 4,
+  "learning_rate": 0.0002,
+  "lora_rank": 16,
+  "lora_dropout": 0.05,
+  "total_steps": 552,
+  "total_duration_sec": 2277.835189819336,
+  "throughput_samples_per_sec": 0.9693414211302641,
+  "peak_vram_mb": 3288.345703125,
+  "avg_gpu_util_percent": 32.04,
+  "peak_gpu_util_percent": 46.0,
+  "best_val_loss": 0.07356733620747344
+}

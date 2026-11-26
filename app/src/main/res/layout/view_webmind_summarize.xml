@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutWebmindSummarize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llSummarizeBottomBar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- ========================================================= -->
+            <!-- SOURCE SELECTOR TABS (WEBPAGE, YOUTUBE, PDF/FILE)         -->
+            <!-- ========================================================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tabSumWebpage"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_pill_black"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:text="Webpage"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tabSumYoutube"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Youtube"
+                    android:textColor="#4B5563"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tabSumPdf"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="PDF / File"
+                    android:textColor="#4B5563"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- ========================================================= -->
+            <!-- URL / LINK INPUT BAR                                      -->
+            <!-- ========================================================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_command_bar_light"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_globe"
+                    app:tint="#6B7280" />
+
+                <EditText
+                    android:id="@+id/etSummarizeUrl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Paste article or YouTube URL..."
+                    android:imeOptions="actionGo"
+                    android:inputType="textUri"
+                    android:maxLines="1"
+                    android:text="https://www.bbc.com/news/science-space"
+                    android:textColor="#111827"
+                    android:textColorHint="#9CA3AF"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/btnSummarizeClear"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_close"
+                    app:tint="#6B7280" />
+
+                <ImageButton
+                    android:id="@+id/btnSummarizeSend"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_circle_black"
+                    android:contentDescription="Summarize"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_send"
+                    app:tint="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- ========================================================= -->
+            <!-- ARTICLE PREVIEW CARD                                      -->
+            <!-- ========================================================= -->
+            <LinearLayout
+                android:id="@+id/cardArticlePreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_action_card_light"
+                android:elevation="1dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- Thumbnail / Rocket Icon -->
+                    <ImageView
+                        android:id="@+id/ivSummarizeThumbnail"
+                        android:layout_width="64dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/bg_filter_pill_light"
+                        android:padding="8dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_flight"
+                        app:tint="#111827" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSummarizePreviewTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-bold"
+                            android:text="NASA's New Moon Mount Key Updates"
+                            android:textColor="#111827"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSummarizePreviewSource"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif"
+                            android:text="BBC News · Jan 12, 2026"
+                            android:textColor="#6B7280"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnTriggerSummarize"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_black_pill"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="Summarize"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- ========================================================= -->
+            <!-- OUTPUT SECTION TABS (SUMMARY, KEY POINTS, INSIGHTS, SOURCE)-->
+            <!-- ========================================================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tabOutSummary"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_pill_black"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:text="Summary"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11.5sp" />
+
+                <TextView
+                    android:id="@+id/tabOutKeyPoints"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Key Points"
+                    android:textColor="#4B5563"
+                    android:textSize="11.5sp" />
+
+                <TextView
+                    android:id="@+id/tabOutInsights"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Insights"
+                    android:textColor="#4B5563"
+                    android:textSize="11.5sp" />
+
+                <TextView
+                    android:id="@+id/tabOutSource"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Source"
+                    android:textColor="#4B5563"
+                    android:textSize="11.5sp" />
+            </LinearLayout>
+
+            <!-- ========================================================= -->
+            <!-- NUMBERED KEY TAKEAWAYS LIST                               -->
+            <!-- ========================================================= -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="Key Takeaways"
+                android:textColor="#111827"
+                android:textSize="14.5sp"
+                android:textStyle="bold" />
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#111827"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tvTakeawayText1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="2dp"
+                    android:text="NASA will test advanced lunar lander technology in 2026."
+                    android:textColor="#374151"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#111827"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tvTakeawayText2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="2dp"
+                    android:text="The mission supports long-term human presence on the Moon."
+                    android:textColor="#374151"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#111827"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tvTakeawayText3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="2dp"
+                    android:text="International partners like ESA and JAXA are involved."
+                    android:textColor="#374151"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Item 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_filter_pill_light"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="#111827"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tvTakeawayText4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="2dp"
+                    android:text="New technologies will be tested for future Mars exploration."
+                    android:textColor="#374151"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- ========================================================= -->
+            <!-- IMPORTANT QUESTIONS ACCORDION                             -->
+            <!-- ========================================================= -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="Important Questions"
+                android:textColor="#111827"
+                android:textSize="14.5sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_action_card_light"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <!-- Q1 -->
+                <LinearLayout
+                    android:id="@+id/rowFaq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="• How is this different from Artemis?"
+                        android:textColor="#374151"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="#9CA3AF" />
+                </LinearLayout>
+
+                <!-- Q2 -->
+                <LinearLayout
+                    android:id="@+id/rowFaq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="• What technologies are being tested?"
+                        android:textColor="#374151"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="#9CA3AF" />
+                </LinearLayout>
+
+                <!-- Q3 -->
+                <LinearLayout
+                    android:id="@+id/rowFaq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="• What is the expected timeline?"
+                        android:textColor="#374151"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="#9CA3AF" />
+                </LinearLayout>
+
+                <!-- Q4 -->
+                <LinearLayout
+                    android:id="@+id/rowFaq4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="• How does this impact future Mars missions?"
+                        android:textColor="#374151"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="#9CA3AF" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Input Bar -->
+    <LinearLayout
+        android:id="@+id/llSummarizeBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/bg_btn_plus_blue"
+            android:contentDescription="New"
+            android:padding="8dp"
+            android:src="@drawable/ic_plus"
+            app:tint="#FFFFFF" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_command_bar_light"
+            android:paddingStart="12dp"
+            android:paddingEnd="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/btnSummarizeVoiceMic"
+                android:background="@null"
+                android:hint="Ask follow-up..."
+                android:maxLines="1"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/btnSummarizeVoiceMic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Mic"
+                android:padding="5dp"
+                android:src="@drawable/ic_mic"
+                app:tint="#4B5563" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

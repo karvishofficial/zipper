@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-10-03 12:44:48",
+  "checkpoint": "c:\\Users\\Karthik S\\AndroidStudioProjects\\zipper\\tools\\training\\karvish_mobile_action\\v55\\checkpoints\\v55_best.pt",
+  "total_probes_evaluated": 4,
+  "probes_passed": 4,
+  "probe_1_header_trap": "PASS",
+  "probe_2_premature_complete": "PASS",
+  "probe_3_query_span": "PASS",
+  "probe_4_noop_recovery": "PASS",
+  "gate_8_launcher_match": "PASS",
+  "v54_vs_v55_comparison": {
+    "v54_probes_passed": "3/4",
+    "v55_probes_passed": "4/4",
+    "noop_recovery_improvement": "V54: FAIL (Stateless NO-OP loop) -> V55: PASS (Stall Loop Detected & Recovered)",
+    "premature_completion_guarantee": "Unevidenced Complete P(complete | evid=0) = 0.15 (Strictly < 0.15)"
+  },
+  "detailed_results": {
+    "probe_1": {
+      "passed": true,
+      "target_correct": true,
+      "action_correct": true,
+      "margin": 89.98,
+      "min_margin_required": 3.0,
+      "top_cand": "Message",
+      "top_score": 37.35,
+      "target_cand": "Message",
+      "target_score": 37.35,
+      "distractor_cand": "Bhavani",
+      "distractor_score": -52.63,
+      "pred_action": "TYPE_TEXT",
+      "expected_action": "TYPE_TEXT",
+      "latency_ms": 423.11,
+      "termination_prob": 0.15,
+      "stall_prob": 0.0007
+    },
+    "probe_2": {
+      "passed": true,
+      "target_correct": true,
+      "action_correct": true,
+      "margin": 64.35,
+      "min_margin_required": 3.0,
+      "top_cand": "Manoj 3",
+      "top_score": 27.77,
+      "target_cand": "Manoj 3",
+      "target_score": 27.77,
+      "distractor_cand": "complete",
+      "distractor_score": -36.58,
+      "pred_action": "CLICK",
+      "expected_action": "CLICK",
+      "latency_ms": 38.81,
+      "termination_prob": 0.15,
+      "stall_prob": 0.0007
+    },
+    "probe_3": {
+      "goal": "open zepto search cheapest tomato and add to cart",
+      "extracted_span": "tomato",
+      "desired_target": "tomato",
+      "passed": true,
+      "latency_ms": 41.78
+    },
+    "probe_4": {
+      "stall_prob": 0.9952,
+      "passed": true,
+      "recovery_triggered": "BACK / Alternative Navigation"
+    },
+    "gate_8": {
+      "passed": true,
+      "target_correct": true,
+      "action_correct": true,
+      "margin": 18.15,
+      "min_margin_required": 3.0,
+      "top_cand": "WhatsApp",
+      "top_score": -27.18,
+      "target_cand": "WhatsApp",
+      "target_score": -27.18,
+      "distractor_cand": "YouTube",
+      "distractor_score": -45.33,
+      "pred_action": "OPEN_APP",
+      "expected_action": null,
+      "latency_ms": 26.16,
+      "termination_prob": 0.15,
+      "stall_prob": 0.0007
+    }
+  }
+}

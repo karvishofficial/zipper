@@ -1,0 +1,5896 @@
+[
+  {
+    "id": "seed_0001",
+    "utterance": "allo 1kg paneeerr 2kg order it in zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0002",
+    "utterance": "zepto pe 1 packet milk and bread order karo",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "milk",
+          "1 packet"
+        ],
+        [
+          "bread",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0003",
+    "utterance": "order 2l milk and 6 eggs in zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "milk",
+          "2l"
+        ],
+        [
+          "eggs",
+          "6"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0004",
+    "utterance": "1kg pyaaz and 1kg tamatar zepto jaldi",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "pyaaz",
+          "1kg"
+        ],
+        [
+          "tamatar",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0005",
+    "utterance": "get me amul butter 500g from zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "amul butter",
+          "500g"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0006",
+    "utterance": "zepto 2kg atta aashirvaad order fast",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aashirvaad atta",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0007",
+    "utterance": "order 1 bottle coke and chips in blinkit",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "coke",
+          "1 bottle"
+        ],
+        [
+          "chips",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0008",
+    "utterance": "blinkit search 5kg rice",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "rice",
+          "5kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0009",
+    "utterance": "swiggy chicken biryani order kar do",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "chicken biryani",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0010",
+    "utterance": "zomato pizza order margherita",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zomato",
+    "slots": {
+      "items": [
+        [
+          "margherita pizza",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0011",
+    "utterance": "zepto allo 2kg onion 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "onion",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0012",
+    "utterance": "buy coffee and sugar on blinkit",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "coffee",
+          "1"
+        ],
+        [
+          "sugar",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0013",
+    "utterance": "amazon search wireless mouse",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Amazon",
+    "slots": {
+      "items": [
+        [
+          "wireless mouse",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0014",
+    "utterance": "flipkart search running shoes under 2000",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Flipkart",
+    "slots": {
+      "items": [
+        [
+          "running shoes",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0015",
+    "utterance": "blinkit pe dahi 500g lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "dahi",
+          "500g"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0016",
+    "utterance": "zepto order 4 bananas and 1 apple box",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "bananas",
+          "4"
+        ],
+        [
+          "apple box",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0017",
+    "utterance": "swiggy instamart coconut water 2",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "coconut water",
+          "2"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0018",
+    "utterance": "order magneshium biscuits on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "magnesium biscuits",
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0019",
+    "utterance": "order amul gold milk 1 liter zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "amul gold milk",
+          "1 liter"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0020",
+    "utterance": "chek milk 2l on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "milk",
+          "2l"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0021",
+    "utterance": "blinkit pe aloo 2kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0022",
+    "utterance": "buy aloo 3kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0023",
+    "utterance": "instamart cart add aloo 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0024",
+    "utterance": "order aloo 2kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0025",
+    "utterance": "blinkit pe aloo 3kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0026",
+    "utterance": "buy aloo 1kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0027",
+    "utterance": "instamart cart add aloo 2kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0028",
+    "utterance": "order aloo 3kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0029",
+    "utterance": "blinkit pe aloo 1kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0030",
+    "utterance": "buy aloo 2kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0031",
+    "utterance": "instamart cart add aloo 3kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0032",
+    "utterance": "order aloo 1kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0033",
+    "utterance": "blinkit pe aloo 2kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0034",
+    "utterance": "buy aloo 3kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0035",
+    "utterance": "instamart cart add aloo 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0036",
+    "utterance": "order aloo 2kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0037",
+    "utterance": "blinkit pe aloo 3kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0038",
+    "utterance": "buy aloo 1kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0039",
+    "utterance": "instamart cart add aloo 2kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0040",
+    "utterance": "order aloo 3kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0041",
+    "utterance": "blinkit pe aloo 1kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0042",
+    "utterance": "buy aloo 2kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0043",
+    "utterance": "instamart cart add aloo 3kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0044",
+    "utterance": "order aloo 1kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0045",
+    "utterance": "blinkit pe aloo 2kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0046",
+    "utterance": "buy aloo 3kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0047",
+    "utterance": "instamart cart add aloo 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0048",
+    "utterance": "order aloo 2kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0049",
+    "utterance": "blinkit pe aloo 3kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0050",
+    "utterance": "buy aloo 1kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0051",
+    "utterance": "instamart cart add aloo 2kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0052",
+    "utterance": "order aloo 3kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0053",
+    "utterance": "blinkit pe aloo 1kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0054",
+    "utterance": "buy aloo 2kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0055",
+    "utterance": "instamart cart add aloo 3kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0056",
+    "utterance": "order aloo 1kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0057",
+    "utterance": "blinkit pe aloo 2kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0058",
+    "utterance": "buy aloo 3kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0059",
+    "utterance": "instamart cart add aloo 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0060",
+    "utterance": "order aloo 2kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0061",
+    "utterance": "blinkit pe aloo 3kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0062",
+    "utterance": "buy aloo 1kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0063",
+    "utterance": "instamart cart add aloo 2kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0064",
+    "utterance": "order aloo 3kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0065",
+    "utterance": "blinkit pe aloo 1kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0066",
+    "utterance": "buy aloo 2kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0067",
+    "utterance": "instamart cart add aloo 3kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0068",
+    "utterance": "order aloo 1kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0069",
+    "utterance": "blinkit pe aloo 2kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0070",
+    "utterance": "buy aloo 3kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0071",
+    "utterance": "instamart cart add aloo 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0072",
+    "utterance": "order aloo 2kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0073",
+    "utterance": "blinkit pe aloo 3kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0074",
+    "utterance": "buy aloo 1kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0075",
+    "utterance": "instamart cart add aloo 2kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0076",
+    "utterance": "order aloo 3kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0077",
+    "utterance": "blinkit pe aloo 1kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0078",
+    "utterance": "buy aloo 2kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0079",
+    "utterance": "instamart cart add aloo 3kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0080",
+    "utterance": "order aloo 1kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0081",
+    "utterance": "blinkit pe aloo 2kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0082",
+    "utterance": "buy aloo 3kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0083",
+    "utterance": "instamart cart add aloo 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0084",
+    "utterance": "order aloo 2kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0085",
+    "utterance": "blinkit pe aloo 3kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0086",
+    "utterance": "buy aloo 1kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0087",
+    "utterance": "instamart cart add aloo 2kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0088",
+    "utterance": "order aloo 3kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0089",
+    "utterance": "blinkit pe aloo 1kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0090",
+    "utterance": "buy aloo 2kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0091",
+    "utterance": "instamart cart add aloo 3kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0092",
+    "utterance": "order aloo 1kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0093",
+    "utterance": "blinkit pe aloo 2kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0094",
+    "utterance": "buy aloo 3kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0095",
+    "utterance": "instamart cart add aloo 1kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0096",
+    "utterance": "order aloo 2kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0097",
+    "utterance": "blinkit pe aloo 3kg lana",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Blinkit",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0098",
+    "utterance": "buy aloo 1kg and paneer 1kg swiggy",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Swiggy",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "1kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0099",
+    "utterance": "instamart cart add aloo 2kg",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Instamart",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "2kg"
+        ],
+        [
+          "paneer",
+          "2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0100",
+    "utterance": "order aloo 3kg on zepto",
+    "category": "groceries",
+    "intent": "ORDER_GROCERIES",
+    "app": "Zepto",
+    "slots": {
+      "items": [
+        [
+          "aloo",
+          "3kg"
+        ],
+        [
+          "paneer",
+          "1kg"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "seed_0101",
+    "utterance": "i am bbored play me a song of doremon",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "doraemon song"
+    }
+  },
+  {
+    "id": "seed_0102",
+    "utterance": "play that new weeknd song on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "new weeknd song"
+    }
+  },
+  {
+    "id": "seed_0103",
+    "utterance": "lofi beats lagao youtube pe",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "lofi beats"
+    }
+  },
+  {
+    "id": "seed_0104",
+    "utterance": "play shinchan episode in hindi yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "shinchan hindi episode"
+    }
+  },
+  {
+    "id": "seed_0105",
+    "utterance": "yt mrbeast latest video play",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "mrbeast latest video"
+    }
+  },
+  {
+    "id": "seed_0106",
+    "utterance": "spotify play arijit singh top songs",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "arijit singh top songs"
+    }
+  },
+  {
+    "id": "seed_0107",
+    "utterance": "spoti play punjabi playlist",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "punjabi playlist"
+    }
+  },
+  {
+    "id": "seed_0108",
+    "utterance": "youtube pe spacex launch video dikhao",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "spacex launch video"
+    }
+  },
+  {
+    "id": "seed_0109",
+    "utterance": "play romantic songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "romantic songs"
+    }
+  },
+  {
+    "id": "seed_0110",
+    "utterance": "play trailer of kalki 2898 ad",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "kalki 2898 ad trailer"
+    }
+  },
+  {
+    "id": "seed_0111",
+    "utterance": "i feel sad play happy songs on spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "happy songs"
+    }
+  },
+  {
+    "id": "seed_0112",
+    "utterance": "play cartoon on youtube for kids",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "cartoon for kids"
+    }
+  },
+  {
+    "id": "seed_0113",
+    "utterance": "yt search photography tutorial",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "photography tutorial"
+    }
+  },
+  {
+    "id": "seed_0114",
+    "utterance": "play old 90s songs in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "90s songs"
+    }
+  },
+  {
+    "id": "seed_0115",
+    "utterance": "open yt and play standup comedy",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "standup comedy"
+    }
+  },
+  {
+    "id": "seed_0116",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0117",
+    "utterance": "yt pe interstellar theme chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "interstellar theme"
+    }
+  },
+  {
+    "id": "seed_0118",
+    "utterance": "find and play eminem hits spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "eminem hits"
+    }
+  },
+  {
+    "id": "seed_0119",
+    "utterance": "listen to naruto theme song on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "naruto theme song"
+    }
+  },
+  {
+    "id": "seed_0120",
+    "utterance": "open spoti and search doraemon theme",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "doraemon theme"
+    }
+  },
+  {
+    "id": "seed_0121",
+    "utterance": "i am bored play sidhu moose wala on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "sidhu moose wala"
+    }
+  },
+  {
+    "id": "seed_0122",
+    "utterance": "play taylor swift folklore in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "taylor swift folklore"
+    }
+  },
+  {
+    "id": "seed_0123",
+    "utterance": "yt pe rock playlist chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "rock playlist"
+    }
+  },
+  {
+    "id": "seed_0124",
+    "utterance": "find and play meditation sound spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "meditation sound"
+    }
+  },
+  {
+    "id": "seed_0125",
+    "utterance": "listen to bollywood hits 2024 on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "bollywood hits 2024"
+    }
+  },
+  {
+    "id": "seed_0126",
+    "utterance": "open spoti and search tech news today",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "tech news today"
+    }
+  },
+  {
+    "id": "seed_0127",
+    "utterance": "i am bored play arijit singh songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "arijit singh songs"
+    }
+  },
+  {
+    "id": "seed_0128",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0129",
+    "utterance": "yt pe interstellar theme chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "interstellar theme"
+    }
+  },
+  {
+    "id": "seed_0130",
+    "utterance": "find and play eminem hits spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "eminem hits"
+    }
+  },
+  {
+    "id": "seed_0131",
+    "utterance": "listen to naruto theme song on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "naruto theme song"
+    }
+  },
+  {
+    "id": "seed_0132",
+    "utterance": "open spoti and search doraemon theme",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "doraemon theme"
+    }
+  },
+  {
+    "id": "seed_0133",
+    "utterance": "i am bored play sidhu moose wala on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "sidhu moose wala"
+    }
+  },
+  {
+    "id": "seed_0134",
+    "utterance": "play taylor swift folklore in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "taylor swift folklore"
+    }
+  },
+  {
+    "id": "seed_0135",
+    "utterance": "yt pe rock playlist chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "rock playlist"
+    }
+  },
+  {
+    "id": "seed_0136",
+    "utterance": "find and play meditation sound spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "meditation sound"
+    }
+  },
+  {
+    "id": "seed_0137",
+    "utterance": "listen to bollywood hits 2024 on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "bollywood hits 2024"
+    }
+  },
+  {
+    "id": "seed_0138",
+    "utterance": "open spoti and search tech news today",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "tech news today"
+    }
+  },
+  {
+    "id": "seed_0139",
+    "utterance": "i am bored play arijit singh songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "arijit singh songs"
+    }
+  },
+  {
+    "id": "seed_0140",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0141",
+    "utterance": "yt pe interstellar theme chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "interstellar theme"
+    }
+  },
+  {
+    "id": "seed_0142",
+    "utterance": "find and play eminem hits spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "eminem hits"
+    }
+  },
+  {
+    "id": "seed_0143",
+    "utterance": "listen to naruto theme song on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "naruto theme song"
+    }
+  },
+  {
+    "id": "seed_0144",
+    "utterance": "open spoti and search doraemon theme",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "doraemon theme"
+    }
+  },
+  {
+    "id": "seed_0145",
+    "utterance": "i am bored play sidhu moose wala on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "sidhu moose wala"
+    }
+  },
+  {
+    "id": "seed_0146",
+    "utterance": "play taylor swift folklore in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "taylor swift folklore"
+    }
+  },
+  {
+    "id": "seed_0147",
+    "utterance": "yt pe rock playlist chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "rock playlist"
+    }
+  },
+  {
+    "id": "seed_0148",
+    "utterance": "find and play meditation sound spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "meditation sound"
+    }
+  },
+  {
+    "id": "seed_0149",
+    "utterance": "listen to bollywood hits 2024 on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "bollywood hits 2024"
+    }
+  },
+  {
+    "id": "seed_0150",
+    "utterance": "open spoti and search tech news today",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "tech news today"
+    }
+  },
+  {
+    "id": "seed_0151",
+    "utterance": "i am bored play arijit singh songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "arijit singh songs"
+    }
+  },
+  {
+    "id": "seed_0152",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0153",
+    "utterance": "yt pe interstellar theme chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "interstellar theme"
+    }
+  },
+  {
+    "id": "seed_0154",
+    "utterance": "find and play eminem hits spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "eminem hits"
+    }
+  },
+  {
+    "id": "seed_0155",
+    "utterance": "listen to naruto theme song on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "naruto theme song"
+    }
+  },
+  {
+    "id": "seed_0156",
+    "utterance": "open spoti and search doraemon theme",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "doraemon theme"
+    }
+  },
+  {
+    "id": "seed_0157",
+    "utterance": "i am bored play sidhu moose wala on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "sidhu moose wala"
+    }
+  },
+  {
+    "id": "seed_0158",
+    "utterance": "play taylor swift folklore in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "taylor swift folklore"
+    }
+  },
+  {
+    "id": "seed_0159",
+    "utterance": "yt pe rock playlist chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "rock playlist"
+    }
+  },
+  {
+    "id": "seed_0160",
+    "utterance": "find and play meditation sound spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "meditation sound"
+    }
+  },
+  {
+    "id": "seed_0161",
+    "utterance": "listen to bollywood hits 2024 on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "bollywood hits 2024"
+    }
+  },
+  {
+    "id": "seed_0162",
+    "utterance": "open spoti and search tech news today",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "tech news today"
+    }
+  },
+  {
+    "id": "seed_0163",
+    "utterance": "i am bored play arijit singh songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "arijit singh songs"
+    }
+  },
+  {
+    "id": "seed_0164",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0165",
+    "utterance": "yt pe interstellar theme chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "interstellar theme"
+    }
+  },
+  {
+    "id": "seed_0166",
+    "utterance": "find and play eminem hits spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "eminem hits"
+    }
+  },
+  {
+    "id": "seed_0167",
+    "utterance": "listen to naruto theme song on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "naruto theme song"
+    }
+  },
+  {
+    "id": "seed_0168",
+    "utterance": "open spoti and search doraemon theme",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "doraemon theme"
+    }
+  },
+  {
+    "id": "seed_0169",
+    "utterance": "i am bored play sidhu moose wala on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "sidhu moose wala"
+    }
+  },
+  {
+    "id": "seed_0170",
+    "utterance": "play taylor swift folklore in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "taylor swift folklore"
+    }
+  },
+  {
+    "id": "seed_0171",
+    "utterance": "yt pe rock playlist chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "rock playlist"
+    }
+  },
+  {
+    "id": "seed_0172",
+    "utterance": "find and play meditation sound spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "meditation sound"
+    }
+  },
+  {
+    "id": "seed_0173",
+    "utterance": "listen to bollywood hits 2024 on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "bollywood hits 2024"
+    }
+  },
+  {
+    "id": "seed_0174",
+    "utterance": "open spoti and search tech news today",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "tech news today"
+    }
+  },
+  {
+    "id": "seed_0175",
+    "utterance": "i am bored play arijit singh songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "arijit singh songs"
+    }
+  },
+  {
+    "id": "seed_0176",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0177",
+    "utterance": "yt pe interstellar theme chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "interstellar theme"
+    }
+  },
+  {
+    "id": "seed_0178",
+    "utterance": "find and play eminem hits spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "eminem hits"
+    }
+  },
+  {
+    "id": "seed_0179",
+    "utterance": "listen to naruto theme song on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "naruto theme song"
+    }
+  },
+  {
+    "id": "seed_0180",
+    "utterance": "open spoti and search doraemon theme",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "doraemon theme"
+    }
+  },
+  {
+    "id": "seed_0181",
+    "utterance": "i am bored play sidhu moose wala on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "sidhu moose wala"
+    }
+  },
+  {
+    "id": "seed_0182",
+    "utterance": "play taylor swift folklore in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "taylor swift folklore"
+    }
+  },
+  {
+    "id": "seed_0183",
+    "utterance": "yt pe rock playlist chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "rock playlist"
+    }
+  },
+  {
+    "id": "seed_0184",
+    "utterance": "find and play meditation sound spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "meditation sound"
+    }
+  },
+  {
+    "id": "seed_0185",
+    "utterance": "listen to bollywood hits 2024 on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "bollywood hits 2024"
+    }
+  },
+  {
+    "id": "seed_0186",
+    "utterance": "open spoti and search tech news today",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "tech news today"
+    }
+  },
+  {
+    "id": "seed_0187",
+    "utterance": "i am bored play arijit singh songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "arijit singh songs"
+    }
+  },
+  {
+    "id": "seed_0188",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0189",
+    "utterance": "yt pe interstellar theme chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "interstellar theme"
+    }
+  },
+  {
+    "id": "seed_0190",
+    "utterance": "find and play eminem hits spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "eminem hits"
+    }
+  },
+  {
+    "id": "seed_0191",
+    "utterance": "listen to naruto theme song on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "naruto theme song"
+    }
+  },
+  {
+    "id": "seed_0192",
+    "utterance": "open spoti and search doraemon theme",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "doraemon theme"
+    }
+  },
+  {
+    "id": "seed_0193",
+    "utterance": "i am bored play sidhu moose wala on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "sidhu moose wala"
+    }
+  },
+  {
+    "id": "seed_0194",
+    "utterance": "play taylor swift folklore in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "taylor swift folklore"
+    }
+  },
+  {
+    "id": "seed_0195",
+    "utterance": "yt pe rock playlist chala do",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "rock playlist"
+    }
+  },
+  {
+    "id": "seed_0196",
+    "utterance": "find and play meditation sound spotify",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "meditation sound"
+    }
+  },
+  {
+    "id": "seed_0197",
+    "utterance": "listen to bollywood hits 2024 on youtube",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "bollywood hits 2024"
+    }
+  },
+  {
+    "id": "seed_0198",
+    "utterance": "open spoti and search tech news today",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "tech news today"
+    }
+  },
+  {
+    "id": "seed_0199",
+    "utterance": "i am bored play arijit singh songs on yt",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "query": "arijit singh songs"
+    }
+  },
+  {
+    "id": "seed_0200",
+    "utterance": "play lo-fi sleep music in spoti",
+    "category": "media",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "lo-fi sleep music"
+    }
+  },
+  {
+    "id": "seed_0201",
+    "utterance": "yo msg mom reached in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "reached"
+    }
+  },
+  {
+    "id": "seed_0202",
+    "utterance": "text rahul wassup on wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "wassup"
+    }
+  },
+  {
+    "id": "seed_0203",
+    "utterance": "insta pe photography search karo",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "Instagram",
+    "slots": {
+      "query": "photography"
+    }
+  },
+  {
+    "id": "seed_0204",
+    "utterance": "send hi to bhavani in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "hi"
+    }
+  },
+  {
+    "id": "seed_0205",
+    "utterance": "tell dad call me in 10 mins whatsapp",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "call me in 10 mins"
+    }
+  },
+  {
+    "id": "seed_0206",
+    "utterance": "wa pe rohit ko message karo im on the way",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohit",
+      "message": "im on the way"
+    }
+  },
+  {
+    "id": "seed_0207",
+    "utterance": "open insta and search wildlife reels",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "Instagram",
+    "slots": {
+      "query": "wildlife reels"
+    }
+  },
+  {
+    "id": "seed_0208",
+    "utterance": "check ig messages",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "Instagram",
+    "slots": {
+      "action": "check_messages"
+    }
+  },
+  {
+    "id": "seed_0209",
+    "utterance": "whatsapp papa i reached station",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Papa",
+      "message": "i reached station"
+    }
+  },
+  {
+    "id": "seed_0210",
+    "utterance": "text priya will be late by 15m on wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "will be late by 15m"
+    }
+  },
+  {
+    "id": "seed_0211",
+    "utterance": "msg boss: draft submitted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Boss",
+      "message": "draft submitted"
+    }
+  },
+  {
+    "id": "seed_0212",
+    "utterance": "linkedin search software engineer jobs",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "LinkedIn",
+    "slots": {
+      "query": "software engineer jobs"
+    }
+  },
+  {
+    "id": "seed_0213",
+    "utterance": "wa msg alex see you tomorrow",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "see you tomorrow"
+    }
+  },
+  {
+    "id": "seed_0214",
+    "utterance": "insta dm rohit check this reel",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "Instagram",
+    "slots": {
+      "contact": "Rohit",
+      "message": "check this reel"
+    }
+  },
+  {
+    "id": "seed_0215",
+    "utterance": "wa pe dad ko bhejo: reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0216",
+    "utterance": "text rahul on whatsapp: call me back",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0217",
+    "utterance": "send message to priya saying send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0218",
+    "utterance": "whatsapp bhavani where are you jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0219",
+    "utterance": "ping alex in wa that ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0220",
+    "utterance": "yo msg suresh good morning in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0221",
+    "utterance": "wa pe anita ko bhejo: see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0222",
+    "utterance": "text rohan on whatsapp: im on my way",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0223",
+    "utterance": "send message to sneha saying reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0224",
+    "utterance": "whatsapp momm call me back jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0225",
+    "utterance": "ping dad in wa that send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0226",
+    "utterance": "yo msg rahul where are you in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0227",
+    "utterance": "wa pe priya ko bhejo: ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0228",
+    "utterance": "text bhavani on whatsapp: good morning",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0229",
+    "utterance": "send message to alex saying see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0230",
+    "utterance": "whatsapp suresh im on my way jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0231",
+    "utterance": "ping anita in wa that reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0232",
+    "utterance": "yo msg rohan call me back in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0233",
+    "utterance": "wa pe sneha ko bhejo: send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0234",
+    "utterance": "text momm on whatsapp: where are you",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0235",
+    "utterance": "send message to dad saying ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0236",
+    "utterance": "whatsapp rahul good morning jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0237",
+    "utterance": "ping priya in wa that see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0238",
+    "utterance": "yo msg bhavani im on my way in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0239",
+    "utterance": "wa pe alex ko bhejo: reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0240",
+    "utterance": "text suresh on whatsapp: call me back",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0241",
+    "utterance": "send message to anita saying send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0242",
+    "utterance": "whatsapp rohan where are you jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0243",
+    "utterance": "ping sneha in wa that ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0244",
+    "utterance": "yo msg momm good morning in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0245",
+    "utterance": "wa pe dad ko bhejo: see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0246",
+    "utterance": "text rahul on whatsapp: im on my way",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0247",
+    "utterance": "send message to priya saying reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0248",
+    "utterance": "whatsapp bhavani call me back jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0249",
+    "utterance": "ping alex in wa that send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0250",
+    "utterance": "yo msg suresh where are you in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0251",
+    "utterance": "wa pe anita ko bhejo: ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0252",
+    "utterance": "text rohan on whatsapp: good morning",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0253",
+    "utterance": "send message to sneha saying see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0254",
+    "utterance": "whatsapp momm im on my way jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0255",
+    "utterance": "ping dad in wa that reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0256",
+    "utterance": "yo msg rahul call me back in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0257",
+    "utterance": "wa pe priya ko bhejo: send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0258",
+    "utterance": "text bhavani on whatsapp: where are you",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0259",
+    "utterance": "send message to alex saying ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0260",
+    "utterance": "whatsapp suresh good morning jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0261",
+    "utterance": "ping anita in wa that see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0262",
+    "utterance": "yo msg rohan im on my way in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0263",
+    "utterance": "wa pe sneha ko bhejo: reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0264",
+    "utterance": "text momm on whatsapp: call me back",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0265",
+    "utterance": "send message to dad saying send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0266",
+    "utterance": "whatsapp rahul where are you jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0267",
+    "utterance": "ping priya in wa that ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0268",
+    "utterance": "yo msg bhavani good morning in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0269",
+    "utterance": "wa pe alex ko bhejo: see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0270",
+    "utterance": "text suresh on whatsapp: im on my way",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0271",
+    "utterance": "send message to anita saying reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0272",
+    "utterance": "whatsapp rohan call me back jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0273",
+    "utterance": "ping sneha in wa that send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0274",
+    "utterance": "yo msg momm where are you in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0275",
+    "utterance": "wa pe dad ko bhejo: ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0276",
+    "utterance": "text rahul on whatsapp: good morning",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0277",
+    "utterance": "send message to priya saying see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0278",
+    "utterance": "whatsapp bhavani im on my way jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0279",
+    "utterance": "ping alex in wa that reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0280",
+    "utterance": "yo msg suresh call me back in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0281",
+    "utterance": "wa pe anita ko bhejo: send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0282",
+    "utterance": "text rohan on whatsapp: where are you",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0283",
+    "utterance": "send message to sneha saying ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0284",
+    "utterance": "whatsapp momm good morning jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0285",
+    "utterance": "ping dad in wa that see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0286",
+    "utterance": "yo msg rahul im on my way in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0287",
+    "utterance": "wa pe priya ko bhejo: reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0288",
+    "utterance": "text bhavani on whatsapp: call me back",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0289",
+    "utterance": "send message to alex saying send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0290",
+    "utterance": "whatsapp suresh where are you jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0291",
+    "utterance": "ping anita in wa that ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Anita",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0292",
+    "utterance": "yo msg rohan good morning in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rohan",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0293",
+    "utterance": "wa pe sneha ko bhejo: see ya",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Sneha",
+      "message": "see ya"
+    }
+  },
+  {
+    "id": "seed_0294",
+    "utterance": "text momm on whatsapp: im on my way",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Mom",
+      "message": "im on my way"
+    }
+  },
+  {
+    "id": "seed_0295",
+    "utterance": "send message to dad saying reach soon",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Dad",
+      "message": "reach soon"
+    }
+  },
+  {
+    "id": "seed_0296",
+    "utterance": "whatsapp rahul call me back jaldi",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Rahul",
+      "message": "call me back"
+    }
+  },
+  {
+    "id": "seed_0297",
+    "utterance": "ping priya in wa that send the file",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Priya",
+      "message": "send the file"
+    }
+  },
+  {
+    "id": "seed_0298",
+    "utterance": "yo msg bhavani where are you in wa",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Bhavani",
+      "message": "where are you"
+    }
+  },
+  {
+    "id": "seed_0299",
+    "utterance": "wa pe alex ko bhejo: ok noted",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Alex",
+      "message": "ok noted"
+    }
+  },
+  {
+    "id": "seed_0300",
+    "utterance": "text suresh on whatsapp: good morning",
+    "category": "messaging",
+    "intent": "SEND_MESSAGE",
+    "app": "WhatsApp",
+    "slots": {
+      "contact": "Suresh",
+      "message": "good morning"
+    }
+  },
+  {
+    "id": "seed_0301",
+    "utterance": "opn setting and trun of bluetoth",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0302",
+    "utterance": "volume 40 kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "volume",
+      "value": 40
+    }
+  },
+  {
+    "id": "seed_0303",
+    "utterance": "turn on hotspot in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0304",
+    "utterance": "open settings and check battery",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "screen": "battery"
+    }
+  },
+  {
+    "id": "seed_0305",
+    "utterance": "trun of wifi in sttings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0306",
+    "utterance": "turn on flashlight",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0307",
+    "utterance": "mute phone in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "volume",
+      "state": "mute"
+    }
+  },
+  {
+    "id": "seed_0308",
+    "utterance": "increase brightness to 80",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "brightness",
+      "value": 80
+    }
+  },
+  {
+    "id": "seed_0309",
+    "utterance": "settings me jaake display dark mode karo",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0310",
+    "utterance": "turn off auto rotate",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "auto_rotate",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0311",
+    "utterance": "turn off wifi in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0312",
+    "utterance": "opn settings and switch on hotspot",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0313",
+    "utterance": "airplane_mode off settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0314",
+    "utterance": "toggle dark_mode on",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0315",
+    "utterance": "settings me location off kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0316",
+    "utterance": "turn on flashlight in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0317",
+    "utterance": "opn settings and switch off nfc",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0318",
+    "utterance": "bluetooth on settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0319",
+    "utterance": "toggle wifi off",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0320",
+    "utterance": "settings me hotspot on kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0321",
+    "utterance": "turn off airplane_mode in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0322",
+    "utterance": "opn settings and switch on dark_mode",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0323",
+    "utterance": "location off settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0324",
+    "utterance": "toggle flashlight on",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0325",
+    "utterance": "settings me nfc off kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0326",
+    "utterance": "turn on bluetooth in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0327",
+    "utterance": "opn settings and switch off wifi",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0328",
+    "utterance": "hotspot on settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0329",
+    "utterance": "toggle airplane_mode off",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0330",
+    "utterance": "settings me dark_mode on kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0331",
+    "utterance": "turn off location in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0332",
+    "utterance": "opn settings and switch on flashlight",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0333",
+    "utterance": "nfc off settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0334",
+    "utterance": "toggle bluetooth on",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0335",
+    "utterance": "settings me wifi off kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0336",
+    "utterance": "turn on hotspot in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0337",
+    "utterance": "opn settings and switch off airplane_mode",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0338",
+    "utterance": "dark_mode on settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0339",
+    "utterance": "toggle location off",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0340",
+    "utterance": "settings me flashlight on kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0341",
+    "utterance": "turn off nfc in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0342",
+    "utterance": "opn settings and switch on bluetooth",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0343",
+    "utterance": "wifi off settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0344",
+    "utterance": "toggle hotspot on",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0345",
+    "utterance": "settings me airplane_mode off kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0346",
+    "utterance": "turn on dark_mode in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0347",
+    "utterance": "opn settings and switch off location",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0348",
+    "utterance": "flashlight on settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0349",
+    "utterance": "toggle nfc off",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0350",
+    "utterance": "settings me bluetooth on kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0351",
+    "utterance": "turn off wifi in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0352",
+    "utterance": "opn settings and switch on hotspot",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0353",
+    "utterance": "airplane_mode off settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0354",
+    "utterance": "toggle dark_mode on",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0355",
+    "utterance": "settings me location off kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0356",
+    "utterance": "turn on flashlight in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0357",
+    "utterance": "opn settings and switch off nfc",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0358",
+    "utterance": "bluetooth on settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0359",
+    "utterance": "toggle wifi off",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0360",
+    "utterance": "settings me hotspot on kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0361",
+    "utterance": "turn off airplane_mode in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0362",
+    "utterance": "opn settings and switch on dark_mode",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0363",
+    "utterance": "location off settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0364",
+    "utterance": "toggle flashlight on",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0365",
+    "utterance": "settings me nfc off kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0366",
+    "utterance": "turn on bluetooth in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0367",
+    "utterance": "opn settings and switch off wifi",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0368",
+    "utterance": "hotspot on settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "hotspot",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0369",
+    "utterance": "toggle airplane_mode off",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "airplane_mode",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0370",
+    "utterance": "settings me dark_mode on kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "dark_mode",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0371",
+    "utterance": "turn off location in settings",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "location",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0372",
+    "utterance": "opn settings and switch on flashlight",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "flashlight",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0373",
+    "utterance": "nfc off settings please",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "nfc",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0374",
+    "utterance": "toggle bluetooth on",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "bluetooth",
+      "state": "on"
+    }
+  },
+  {
+    "id": "seed_0375",
+    "utterance": "settings me wifi off kar do",
+    "category": "settings",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "setting": "wifi",
+      "state": "off"
+    }
+  },
+  {
+    "id": "seed_0376",
+    "utterance": "calc 450 * 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {
+      "expression": "450 * 12"
+    }
+  },
+  {
+    "id": "seed_0377",
+    "utterance": "put an alarm for 6 morning",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {
+      "time": "6:00 AM"
+    }
+  },
+  {
+    "id": "seed_0378",
+    "utterance": "set timer 15 min for tea",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {
+      "duration": "15 min"
+    }
+  },
+  {
+    "id": "seed_0379",
+    "utterance": "calc 5000 minus 18 percent",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {
+      "expression": "5000 - 18%"
+    }
+  },
+  {
+    "id": "seed_0380",
+    "utterance": "drop a note in keep about grocery",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {
+      "title": "grocery"
+    }
+  },
+  {
+    "id": "seed_0381",
+    "utterance": "set alarm 7:30 am tomorrow",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {
+      "time": "7:30 AM"
+    }
+  },
+  {
+    "id": "seed_0382",
+    "utterance": "calculator 1200 / 4",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {
+      "expression": "1200 / 4"
+    }
+  },
+  {
+    "id": "seed_0383",
+    "utterance": "open clock and start stopwatch",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {
+      "screen": "stopwatch"
+    }
+  },
+  {
+    "id": "seed_0384",
+    "utterance": "make a note on keep: buy medicines",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {
+      "note": "buy medicines"
+    }
+  },
+  {
+    "id": "seed_0385",
+    "utterance": "calc 99 * 45",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {
+      "expression": "99 * 45"
+    }
+  },
+  {
+    "id": "seed_0386",
+    "utterance": "put alarm for 2:05 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0387",
+    "utterance": "set timer for 3 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0388",
+    "utterance": "calc 45 + 9",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0389",
+    "utterance": "keep me note banao: meeting at 5",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0390",
+    "utterance": "calculate 500 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0391",
+    "utterance": "alarm lagao 7:30 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0392",
+    "utterance": "put alarm for 8:35 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0393",
+    "utterance": "set timer for 9 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0394",
+    "utterance": "calc 135 + 27",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0395",
+    "utterance": "keep me note banao: meeting at 11",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0396",
+    "utterance": "calculate 1100 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0397",
+    "utterance": "alarm lagao 1:00 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0398",
+    "utterance": "put alarm for 2:05 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0399",
+    "utterance": "set timer for 15 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0400",
+    "utterance": "calc 225 + 45",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0401",
+    "utterance": "keep me note banao: meeting at 5",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0402",
+    "utterance": "calculate 1700 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0403",
+    "utterance": "alarm lagao 7:30 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0404",
+    "utterance": "put alarm for 8:35 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0405",
+    "utterance": "set timer for 21 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0406",
+    "utterance": "calc 315 + 63",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0407",
+    "utterance": "keep me note banao: meeting at 11",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0408",
+    "utterance": "calculate 2300 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0409",
+    "utterance": "alarm lagao 1:00 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0410",
+    "utterance": "put alarm for 2:05 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0411",
+    "utterance": "set timer for 27 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0412",
+    "utterance": "calc 405 + 81",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0413",
+    "utterance": "keep me note banao: meeting at 5",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0414",
+    "utterance": "calculate 2900 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0415",
+    "utterance": "alarm lagao 7:30 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0416",
+    "utterance": "put alarm for 8:35 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0417",
+    "utterance": "set timer for 3 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0418",
+    "utterance": "calc 495 + 99",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0419",
+    "utterance": "keep me note banao: meeting at 11",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0420",
+    "utterance": "calculate 3500 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0421",
+    "utterance": "alarm lagao 1:00 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0422",
+    "utterance": "put alarm for 2:05 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0423",
+    "utterance": "set timer for 9 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0424",
+    "utterance": "calc 585 + 117",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0425",
+    "utterance": "keep me note banao: meeting at 5",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0426",
+    "utterance": "calculate 4100 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0427",
+    "utterance": "alarm lagao 7:30 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0428",
+    "utterance": "put alarm for 8:35 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0429",
+    "utterance": "set timer for 15 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0430",
+    "utterance": "calc 675 + 135",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0431",
+    "utterance": "keep me note banao: meeting at 11",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0432",
+    "utterance": "calculate 4700 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0433",
+    "utterance": "alarm lagao 1:00 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0434",
+    "utterance": "put alarm for 2:05 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0435",
+    "utterance": "set timer for 21 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0436",
+    "utterance": "calc 765 + 153",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0437",
+    "utterance": "keep me note banao: meeting at 5",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0438",
+    "utterance": "calculate 5300 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0439",
+    "utterance": "alarm lagao 7:30 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0440",
+    "utterance": "put alarm for 8:35 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0441",
+    "utterance": "set timer for 27 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0442",
+    "utterance": "calc 855 + 171",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0443",
+    "utterance": "keep me note banao: meeting at 11",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0444",
+    "utterance": "calculate 5900 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0445",
+    "utterance": "alarm lagao 1:00 baje clock me",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0446",
+    "utterance": "put alarm for 2:05 am in clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0447",
+    "utterance": "set timer for 3 minutes clock",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Clock",
+    "slots": {}
+  },
+  {
+    "id": "seed_0448",
+    "utterance": "calc 945 + 189",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0449",
+    "utterance": "keep me note banao: meeting at 5",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Keep",
+    "slots": {}
+  },
+  {
+    "id": "seed_0450",
+    "utterance": "calculate 6500 into 12",
+    "category": "productivity",
+    "intent": "PRODUCTIVITY_ACTION",
+    "app": "Calculator",
+    "slots": {}
+  },
+  {
+    "id": "seed_0451",
+    "utterance": "play a game on phone",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "intent": "LAUNCH_GAME"
+    }
+  },
+  {
+    "id": "seed_0452",
+    "utterance": "play a song on spotify",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "intent": "STREAM_MEDIA"
+    }
+  },
+  {
+    "id": "seed_0453",
+    "utterance": "play cricket game",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "intent": "LAUNCH_GAME"
+    }
+  },
+  {
+    "id": "seed_0454",
+    "utterance": "play rock music yt",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "intent": "STREAM_MEDIA"
+    }
+  },
+  {
+    "id": "seed_0455",
+    "utterance": "can you open the chat with mom in wa",
+    "category": "polysemy",
+    "intent": "OPEN_CHAT",
+    "app": "WhatsApp",
+    "slots": {
+      "intent": "OPEN_CHAT",
+      "contact": "Mom"
+    }
+  },
+  {
+    "id": "seed_0456",
+    "utterance": "open the settings and turn on wifi",
+    "category": "polysemy",
+    "intent": "CHANGE_SETTING",
+    "app": "Settings",
+    "slots": {
+      "intent": "CHANGE_SETTING"
+    }
+  },
+  {
+    "id": "seed_0457",
+    "utterance": "can you please find lo-fi beats on youtube",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "YouTube",
+    "slots": {
+      "intent": "STREAM_MEDIA"
+    }
+  },
+  {
+    "id": "seed_0458",
+    "utterance": "i am feeling bored open a game",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "intent": "LAUNCH_GAME"
+    }
+  },
+  {
+    "id": "seed_0459",
+    "utterance": "help me call mom",
+    "category": "polysemy",
+    "intent": "CALL_CONTACT",
+    "app": "WhatsApp",
+    "slots": {
+      "intent": "CALL_CONTACT",
+      "contact": "Mom"
+    }
+  },
+  {
+    "id": "seed_0460",
+    "utterance": "open a new tab in chrome",
+    "category": "polysemy",
+    "intent": "BROWSER_ACTION",
+    "app": "Chrome",
+    "slots": {
+      "intent": "BROWSER_ACTION"
+    }
+  },
+  {
+    "id": "seed_0461",
+    "utterance": "play classical music track 1 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0462",
+    "utterance": "play subway surfers game 2",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0463",
+    "utterance": "play classical music track 3 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0464",
+    "utterance": "play subway surfers game 4",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0465",
+    "utterance": "play classical music track 5 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0466",
+    "utterance": "play subway surfers game 6",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0467",
+    "utterance": "play classical music track 7 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0468",
+    "utterance": "play subway surfers game 8",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0469",
+    "utterance": "play classical music track 9 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0470",
+    "utterance": "play subway surfers game 10",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0471",
+    "utterance": "play classical music track 11 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0472",
+    "utterance": "play subway surfers game 12",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0473",
+    "utterance": "play classical music track 13 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0474",
+    "utterance": "play subway surfers game 14",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0475",
+    "utterance": "play classical music track 15 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0476",
+    "utterance": "play subway surfers game 16",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0477",
+    "utterance": "play classical music track 17 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0478",
+    "utterance": "play subway surfers game 18",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0479",
+    "utterance": "play classical music track 19 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0480",
+    "utterance": "play subway surfers game 20",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0481",
+    "utterance": "play classical music track 21 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0482",
+    "utterance": "play subway surfers game 22",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0483",
+    "utterance": "play classical music track 23 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0484",
+    "utterance": "play subway surfers game 24",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0485",
+    "utterance": "play classical music track 25 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0486",
+    "utterance": "play subway surfers game 26",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0487",
+    "utterance": "play classical music track 27 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0488",
+    "utterance": "play subway surfers game 28",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0489",
+    "utterance": "play classical music track 29 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0490",
+    "utterance": "play subway surfers game 30",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0491",
+    "utterance": "play classical music track 31 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0492",
+    "utterance": "play subway surfers game 32",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0493",
+    "utterance": "play classical music track 33 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0494",
+    "utterance": "play subway surfers game 34",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0495",
+    "utterance": "play classical music track 35 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0496",
+    "utterance": "play subway surfers game 36",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0497",
+    "utterance": "play classical music track 37 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0498",
+    "utterance": "play subway surfers game 38",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  },
+  {
+    "id": "seed_0499",
+    "utterance": "play classical music track 39 in spoti",
+    "category": "polysemy",
+    "intent": "STREAM_MEDIA",
+    "app": "Spotify",
+    "slots": {
+      "query": "classical music"
+    }
+  },
+  {
+    "id": "seed_0500",
+    "utterance": "play subway surfers game 40",
+    "category": "polysemy",
+    "intent": "LAUNCH_GAME",
+    "app": "Play Store",
+    "slots": {
+      "game": "subway surfers"
+    }
+  }
+]

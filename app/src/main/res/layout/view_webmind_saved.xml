@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollWebmindSaved"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingBottom="40dp">
+
+        <!-- ============================================================= -->
+        <!-- CATEGORY TABS (SAVED ITEMS, PRICE TRACKS, COLLECTIONS)        -->
+        <!-- ============================================================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tabSavedAll"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_filter_pill_black"
+                android:fontFamily="sans-serif-bold"
+                android:gravity="center"
+                android:text="Saved Items"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tabSavedPriceTracks"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_filter_pill_light"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Price Tracks"
+                android:textColor="#4B5563"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tabSavedCollections"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_filter_pill_light"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Collections"
+                android:textColor="#4B5563"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- ============================================================= -->
+        <!-- DYNAMIC SAVED & TRACKED LIST CONTAINER                        -->
+        <!-- ============================================================= -->
+        <LinearLayout
+            android:id="@+id/llSavedItemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

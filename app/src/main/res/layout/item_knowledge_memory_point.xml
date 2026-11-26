@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/bg_pill_clean_blue"
+    android:backgroundTint="#1E293B"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvMemoryBullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💡"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvMemoryPointText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="Lives in Indiranagar"
+        android:textColor="#F1F5F9"
+        android:textSize="13sp" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteMemoryPoint"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete memory point"
+        android:padding="4dp"
+        android:src="@drawable/ic_close"
+        app:tint="#94A3B8" />
+
+</LinearLayout>

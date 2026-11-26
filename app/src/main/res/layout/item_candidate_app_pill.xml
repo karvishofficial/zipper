@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="88dp"
+    android:layout_height="96dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/bg_candidate_app_card"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivCandidateAppIcon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:contentDescription="App Icon"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tvCandidateAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Health"
+        android:textColor="#F1F5F9"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+</LinearLayout>

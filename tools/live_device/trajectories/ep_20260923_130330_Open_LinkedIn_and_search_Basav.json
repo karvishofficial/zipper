@@ -1,0 +1,16 @@
+{
+  "episode_id": "ep_20260923_130330_Open_LinkedIn_and_search_Basav",
+  "timestamp": "20260923_130330",
+  "device_id": "RZCY51MQP9K",
+  "goal": "Open LinkedIn and search Basavaraj",
+  "mode": "LIVE_ROLLOUT",
+  "success": false,
+  "final_status": "TIMEOUT",
+  "total_turns": 0,
+  "total_time_sec": 50.98,
+  "total_return": 0.0,
+  "recovery_events": 0,
+  "cycle_oscillations": 0,
+  "false_completes": 0,
+  "turns": []
+}
